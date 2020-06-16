@@ -1,0 +1,16 @@
+name: Rich Blake
+description: A blog about working with agile teams
+meta_description: "Rich Blake - a blog about working with agile teams"
+
+markdown: kramdown
+highlighter: Rouge
+logo: false
+paginate: 5
+baseurl: /
+domain_name: 'https://richblake.github.io'
+google_analytics: 'UA-169266513-1'
+gems: [jekyll-paginate]
+
+# Details for the RSS feed generator
+url:            'https://richblake.github.io'
+author:         'Rich Blake'

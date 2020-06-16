@@ -1,0 +1,114 @@
+I"�<p>I recently helped an agile coach prepare how to facilitate a What? So what? Now what? retrospective.</p>
+
+<p>I’m sharing this with you because I think this technique is incredibly flexible, whether you’ve got just 5 minutes or a room full of 50 people. It will reliably make sure to involve everyone in making sense of a situation and deciding on the next steps.</p>
+
+<p>This guide assumes that</p>
+<ul>
+  <li>your meeting has 6 or more people</li>
+  <li>your meeting has less than 20 people (5 groups of 4 people)</li>
+  <li>you are already familiar with <a href="http://www.liberatingstructures.com/1-1-2-4-all/">1-2-4-all</a></li>
+  <li>your meeting will be remote first</li>
+  <li>you will use <a href="https://zoom.us/">Zoom</a>, so that you can use break-out rooms</li>
+</ul>
+
+<h3 id="what-to-do-before">What to do before</h3>
+<p>Preparation for all retrospectives is essential.</p>
+
+<p>You’ve probably been observing lots about how things have been going. If you think there will be a gnarly subject that needs the right time to discuss and understand, then you need to create the right environment for it to happen. Not all retrospectives last an hour. Change your style based on what you have learnt from working with your team.</p>
+
+<ol>
+  <li>think about the environment you want to create. Include timings, location, tools and variations to the structure that compliment the dynamics that you expect.</li>
+  <li>write your invitation question. This should be a question that helps people focus on an event such as a sprint, a conflict, or whatever you want to reflect on. * For example, given the outage we had last week, what can we learn about how we got it fixed?*</li>
+  <li>prepare a shared document with your frames for the conversation in. I’ve attached <a href="https://docs.google.com/document/d/1SFPIpTGOjoRvW0w-dp7JwXcWjYEspjL6sdLAOOJycrg/view">a template worksheet</a> that you can use.</li>
+  <li>tell your attendees what to expect. Not everyone is able to think on the spot, so tell people what they’re specifically being asked to recall and how the session will be structured so that people can think in their own time if they need to. Here is an example of what to say:</li>
+</ol>
+
+<pre><code>Meeting title: Retrospective on [subject of reflection]
+Description: This is 45 minutes for the whole team to reflect on [subject] that has happened in [a time frame].
+
+I’ll kick things off by asking [invitation question]
+
+You don’t need to prepare beforehand, but you can think ahead of the session by making a list of what happened. This will help generate our list of things to discuss in step 1.
+
+* step 1: Gather facts and observations about how you worked together (about 15 minutes)
+* step 2: Analyse what were the effects of these things, or why they are important to us (about 15 minutes)
+* step 3: Decide what to change about how we work and who is responsible for making sure it happens (about 15 minutes)
+</code></pre>
+
+<h3 id="what-to-do-during">What to do during</h3>
+<p>I recommend that you start with some guidance for your meeting and this should include reading out the <a href="https://retrospectivewiki.org/index.php?title=The_Prime_Directive">agile retrospective prime directive</a></p>
+
+<ol>
+  <li>share your <a href="https://docs.google.com/document/d/1SFPIpTGOjoRvW0w-dp7JwXcWjYEspjL6sdLAOOJycrg/view">worksheet</a> and explain that there will be 3 rounds of 1-2-4-all where you will make 3 lists. 2. ask your invitation question and check that everyone has the same understanding of what you are reflecting on</li>
+  <li>make a What? list using 1-2-4-all.  Keep people grounded in facts and observations</li>
+  <li>make a So what? list by using 1-2-4-all to analyse the What list. Keep people focussed on what patterns and conclusions they can make from the what list.</li>
+  <li>make a Now what? list by using 1-2-4-all to analyse the So What list. Keep people focussed on what make sense as a next step, given what they know about their So what list.</li>
+  <li>Decide which actions to take forward right now.</li>
+</ol>
+
+<h4 id="tips-to-help-1-2-4-all-go-smoothly">Tips to help 1-2-4-all go smoothly</h4>
+<ul>
+  <li>when groups are in the ‘2’ and ‘4’ part encourage groups to notice what’s similar, and also what’s divergent.</li>
+  <li>only add to the worksheet list during the ‘all’ part and ask groups to filter duplicates, only sharing their most important points.</li>
+  <li>make sure to do a final check at the end of the ‘all’ part to catch anything left unsaid, by asking something like: <em>Given what you observe in this list, is there anything left unsaid?</em></li>
+  <li>go around each group and share one point at a time - it helps them prioritise and be succinct</li>
+</ul>
+
+<h4 id="timings">Timings</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>What to do</th>
+      <th>How long</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Explain what to do and give the invitation question</td>
+      <td>2 mins</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>1- 2-4-all looking at the What?</td>
+      <td>10 - 15 mins</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>1- 2-4-all looking at the So what?</td>
+      <td>10 - 15 mins</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>1- 2-4-all looking at the Now what?</td>
+      <td>10 - 15 mins</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Assign a person to the actions in the now what list that you want to take forward</td>
+      <td>2 mins</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="what-to-do-after">What to do after</h3>
+<ul>
+  <li>Make any actions visible wherever you plan your work (like a kanban board)</li>
+  <li>Keep checking in with the owners of the actions about the progress of retrospective actions. The progress of these actions shouldn’t be first re-addressed at the next retro!</li>
+</ul>
+
+<h2 id="i-use-w3-retro-by-default">I use w3 retro by default</h2>
+<p>This technique is the first thing that I consider when choosing the best format for a retrospective. It’s not always the best choice, but it often is for me, most of the time.</p>
+
+<p>What? So What? Now what? helps raise attention and awareness of a whole team of humans and direct it at a problem. It also flattens out power dynamics, and increases everyone’s participation levels throughout the meeting.</p>
+
+<p>It’s also super flexible. Once your team recognises w3 as a format, you can use it more and more in the moment as a 5 minute exercise, when you’re looking at work together.</p>
+
+<h4 id="attribution">Attribution:</h4>
+<ul>
+  <li>What? So what? Now what? is a <a href="http://www.liberatingstructures.com/9-what-so-what-now-what-w/">liberating structure</a></li>
+  <li>This facilitation technique has been developed around Rolfe’s, Freshwater’s and Jasper’s reflective model (2001)</li>
+</ul>
+:ET
