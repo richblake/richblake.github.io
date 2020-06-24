@@ -6,9 +6,9 @@ categories: dealing-with-worry self-care
 permalink: who-wants-you-to-do-well-exercise
 published: true
 ---
-I worry a lot (and its part of who I am).
+I worry a lot. Here's a technique that I use and have shared with others, with love to help with that.
 
-Sometimes it can be about an interview, or a workshop with lots of people, or just about a piece of work that I am doing.
+Sometimes that worry can be about an interview, or a workshop with lots of people, or just about a piece of work that I am doing.
 
 Whatever it is, usually the worry is rooted in trying to predict the future - will this go well? What if its a disaster? What if there's conflict? Will this even be useful for people? Am I even doing the right thing?
 
