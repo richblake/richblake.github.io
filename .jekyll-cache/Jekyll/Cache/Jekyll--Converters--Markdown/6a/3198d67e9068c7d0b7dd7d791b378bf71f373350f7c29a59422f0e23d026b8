@@ -1,0 +1,39 @@
+I"�<p>I recently helped an agile coach prepare how to facilitate a What? So what? Now what? retrospective.</p>
+
+<p>I’m sharing this with you because I think this technique is incredibly flexible, whether you’ve got just 5 minutes or a room full of 50 people. It will reliably make sure to involve everyone in making sense of a situation and deciding on the next steps.</p>
+
+<p>This guide assumes that</p>
+<ul>
+  <li>your meeting has 6 or more people</li>
+  <li>your meeting has less than 20 people (5 groups of 4 people)</li>
+  <li>you are already familiar with <a href="http://www.liberatingstructures.com/1-1-2-4-all/">1-2-4-all</a></li>
+  <li>your meeting will be remote first</li>
+  <li>you will use <a href="https://zoom.us/">Zoom</a>, so that you can use break-out rooms</li>
+</ul>
+
+<h3 id="what-to-do-before">What to do before</h3>
+<p>Preparation for all retrospectives is essential.</p>
+
+<p>You’ve probably been observing lots about how things have been going. If you think there will be a gnarly subject that needs the right time to discuss and understand, then you need to create the right environment for it to happen. Not all retrospectives last an hour. Change your style based on what you have learnt from working with your team.</p>
+
+<ol>
+  <li>think about the environment you want to create. Include timings, location, tools and variations to the structure that compliment the dynamics that you expect.</li>
+  <li>write your invitation question. This should be a question that helps people focus on an event such as a sprint, a conflict, or whatever you want to reflect on. * For example, given the outage we had last week, what can we learn about how we got it fixed?*</li>
+  <li>prepare a shared document with your frames for the conversation in. I’ve attached <a href="https://docs.google.com/document/d/1SFPIpTGOjoRvW0w-dp7JwXcWjYEspjL6sdLAOOJycrg/view">a template worksheet</a> that you can use.</li>
+  <li>tell your attendees what to expect. Not everyone is able to think on the spot, so tell people what they’re specifically being asked to recall and how the session will be structured so that people can think in their own time if they need to. Here is an example of what to say:</li>
+</ol>
+
+<pre><code>Meeting title: Retrospective on [subject of reflection]
+Description: This is 45 minutes for the whole team to reflect on [subject] that has happened in [a time frame].
+
+I’ll kick things off by asking [invitation question]
+
+You don’t need to prepare beforehand, but you can think ahead of the session by making a list of what happened. This will help generate our list of things to discuss in step 1.
+
+* step 1: Gather facts and observations about how you worked together (about 15 minutes)
+* step 2: Analyse what were the effects of these things, or why they are important to us (about 15 minutes)
+* step 3: Decide what to change about how we work and who is responsible for making sure it happens (about 15 minutes)
+</code></pre>
+
+<p>##Test</p>
+:ET
