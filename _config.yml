@@ -7,10 +7,10 @@ highlighter: Rouge
 logo: false
 paginate: 5
 baseurl: /
-domain_name: 'https://richblake.github.io'
+domain_name: 'https://richblake.github.io/'
 google_analytics: 'UA-169266513-1'
 gems: [jekyll-paginate]
 
 # Details for the RSS feed generator
-url:            'https://richblake.github.io'
+url:            'https://richblake.github.io/'
 author:         'Rich Blake'
