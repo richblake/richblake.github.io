@@ -69,7 +69,7 @@ items:
     alt: "Appreciative Interviews"
   - name: "1-2-4-All"
     tier: a
-    image: /images/liberating_structures/01_1-2-4-All.png
+    image: /images/liberating_structures/01_1-2-4-all.png
     alt: "1-2-4-All"
   - name: "Making Space with TRIZ"
     tier: a
