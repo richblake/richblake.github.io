@@ -233,9 +233,9 @@ a {
 	}
 
 	&:hover {
-    	background: color.adjust($accent-color, $hue: 15deg);
-    	border-color: color.adjust($accent-color, $hue: 15deg);
-    	color: $background-color;
+		background: darken($accent-color, 5%);
+		border-color: darken($accent-color, 5%);
+		color: $background-color;
 	}
 
 	svg {
