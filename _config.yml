@@ -1,7 +1,8 @@
-site: Rich Blake
+title: "Rich Blake"
+author: "Rich Blake"
 
-url: https://richblake.github.io/
-baseurl: 
+url: "https://richblake.github.io"
+baseurl: ""
 
 collections:
   pages:
