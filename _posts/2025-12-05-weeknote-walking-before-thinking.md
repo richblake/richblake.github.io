@@ -78,7 +78,7 @@ I returned to the bridge where I fell on the way, this time with my stick. I kno
 
 The scene of the crime: 
 
-![A landscape photo of a duck pond in early evening. The ducks are too cold for the water and sit on the side, a wooden bridge crosses the pond horizontally and a slippery path leads up to it.](/images/posts/scene-of-the-crime.png)
+![A landscape photo of a duck pond in early evening. The ducks are too cold for the water and sit on the side, a wooden bridge crosses the pond horizontally and a slippery path leads up to it.](/images/posts/scene-of-the-crime.JPG)
 
 ## Igniting my spark
 
