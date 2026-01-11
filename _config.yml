@@ -4,6 +4,8 @@ author: "Rich Blake"
 url: "https://richblake.github.io"
 baseurl: ""
 
+repository: richblake/richblake.github.io
+
 collections:
   pages:
     output: true
