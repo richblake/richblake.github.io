@@ -141,10 +141,11 @@ font_settings:
     weight: 600
     letter_spacing: 0
 
-
 advanced_settings:
   ajax_loading: false
-  analytics_code: "G-3NC0YPL15Y"
+  analytics_id: "G-3NC0YPL15Y"
+  analytics_code: |
+    <!-- Google tag (gtag.js) -->
   custom_styles: ""
   header_js: ""
   footer_js: ""
