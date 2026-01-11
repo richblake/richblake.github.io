@@ -51,12 +51,11 @@
 	<style>{{ site.data.settings.advanced_settings.custom_styles }}</style>
 	{% endif %}
 
-	{% if site.data.settings.advanced_settings.analytics_code %}
+	{% if site.data.settings.advanced_settings.analytics_id %}
 	<!-- Consent-controlled Analytics -->
 	<script>
-		window.GA_SNIPPET = `{{ site.data.settings.advanced_settings.analytics_code | strip_newlines | escape }}`;
+		window.GA_MEASUREMENT_ID = "{{ site.data.settings.advanced_settings.analytics_id }}";
 	</script>
-
 	<script src="/js/consent.js"></script>
 	{% endif %}
 
