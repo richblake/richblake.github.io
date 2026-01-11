@@ -1,65 +1,89 @@
 ---
 layout: default
-title: Home
-cover: false
-about: 'about.html'
+title: Rich Blake blog
+description: A list of all blog posts written by Rich Blake. 
+featured_image: /images/social.jpg
 ---
 
-<header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
-    <nav class="main-nav overlay clearfix">
-            {% if page.logo %}
-                <a class="blog-logo" href="{{ site.baseurl }}">
-                    <img src="{{ page.logo }}" alt="Blog Logo" />
-                </a>
-            {% endif %}
-    </nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">{{ site.name }}</h1>
-            <h2 class="page-description">
-                {% if site.description %} {{ site.description }} {% endif %}
-            </h2>
-            {% include find.html %}
-        </div>
-    </div>
-    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
-</header>
+<section class="listing single">
+  <div class="wrap">
 
-
-<main id="content" class="content" role="main">
-<div class="post">
-  <p>Right now I'm at the <a class="link" href="https://www.gov.uk/government/organisations/government-digital-service">Government Digital Service</a> in the international team and I am open to short term remote contracting (security cleared). </p>
-  </div>
-
-    <div class="extra-pagination inner">
-        {% include pagination.html %}
+    <!-- Intro section -->
+    <div class="listing-post">
+      <div class="listing-post__content">
+        <h1>Rich Blake blog</h2>
+        <p>This is a home for my thoughts on some important things in my life. I'm trying to create new opportunities for 'Ah-ha! moments' as I try and process what's going in in my work, social and home life.</p>
+        <p>My ambition is greater than my ability to beat the curse of writer's block, so I've put a backlog of my ideas up on my <a href="/progress.html">open backlog progress page</a>. Feel free to browse what I'm interested in and let me know if anything stands out to you.</p>
+        <p></p>
+        <h2>Latest posts</h2>
+        <hr class="listing-divider">
+      </div>
     </div>
 
+    <!-- Post listings -->
     {% for post in paginator.posts %}
+      <article class="listing-item">
 
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        </header>
-        <section class="post-excerpt">
-            {{ post.excerpt }} <a class="read-more" href="{{ post.url }}">&raquo;</a>
-        </section>
-        <footer class="post-meta">
-            {% if site.author %}
-                <img class="author-thumb" src="/assets/images/profile.png" alt="Author's profile picture" nopin="nopin" />
-                {{ site.author }}
-            {% endif %}
-            {% if post.categories.size > 0 %}
-                {{ post.categories | array_to_sentence_string | prepend: 'on ' }}
-            {% endif %}
-            <time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">
-                {{ post.date | date_to_string }}
+        <h2 class="listing-item__title">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h2>
+
+        <div class="listing-post__content">
+
+          <p class="listing-metadata" aria-label="Post metadata">
+
+            <time class="listing-item__date" datetime="{{ post.date | date: '%Y-%m-%d' }}">
+              {{ post.date | date_to_long_string }}
             </time>
-        </footer>
-    </article>
 
+            {% if post.tags %}
+              <span class="post-tags">
+                {% for tag in post.tags %}
+                  <span class="post-tag">{{ tag }}</span>
+                {% endfor %}
+              </span>
+            {% endif %}
+
+          </p>
+
+          <p class="listing-item__excerpt">
+            {{ post.excerpt }}
+          </p>
+
+        </div> 
+
+      </article>
+
+      <hr class="listing-divider">
     {% endfor %}
 
-    {% include pagination.html %}
+    {% if paginator.total_pages > 1 %}
+      <div class="listing-post">
+        <div class="listing-post__content">
 
-</main>
+          <section class="pagination">
+
+            {% if paginator.previous_page %}
+              <div class="pagination__prev">
+                <a href="{{ paginator.previous_page_path | relative_url }}" class="button button--large">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i> <span>Newer Posts</span>
+                </a>
+              </div>
+            {% endif %}
+
+            {% if paginator.next_page %}
+              <div class="pagination__next">
+                <a href="{{ paginator.next_page_path | relative_url }}" class="button button--large">
+                  <span>Older Posts</span> <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            {% endif %}
+
+          </section>
+
+        </div>
+      </div>
+    {% endif %}
+
+  </div>
+</section>

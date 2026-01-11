@@ -1,0 +1,154 @@
+---
+layout: default
+---
+
+<section class="single">
+  <div class="wrap">
+
+<main
+  id="main-content"
+  class="tier-page{% if page.presentation_mode %} tier-page--presentation{% endif %}"
+  aria-labelledby="page-title"
+  {% if page.presentation_mode %}data-presentation-mode="true"{% endif %}
+>
+
+<style>
+  :root {
+    --tier-border-color: {{ site.data.settings.color_settings.border_color }};
+    --tier-dark-bg: {{ site.data.settings.color_settings.text_dark_color }};
+    --tier-bg: {{ site.data.settings.color_settings.background_color }};
+    --tier-bg-alt: {{ site.data.settings.color_settings.background_alt_color }};
+    --tier-accent: {{ site.data.settings.color_settings.accent_color }};
+  }
+</style>
+
+<!-- Load external CSS for ALL tier pages -->
+<link rel="stylesheet" href="/css/tierlist.css">
+
+{% if page.presentation_mode %}
+<script>
+  document.body.classList.add("presentation-hide-chrome");
+</script>
+{% endif %}
+
+<h1 id="page-title">{{ page.title }}</h1>
+
+{% if page.description %}
+  <p class="tier-page__description">{{ page.description }}</p>
+{% endif %}
+
+{% assign items = page.items %}
+
+{% if page.presentation_mode %}
+
+<!-- =============================== -->
+<!--      PRESENTATION MODE          -->
+<!-- =============================== -->
+
+<section class="tier-list tier-list--content">
+  <div class="tier-header" aria-hidden="true">
+    <div>Tier</div>
+    <div>Items</div>
+  </div>
+
+  {% for tier in page.tier_labels %}
+  <div class="tier-row" id="tier-{{ tier.id }}">
+    <div class="tier-label">{{ tier.name }}</div>
+    <div class="tier-items" data-tier-target="{{ tier.id }}" aria-label="{{ tier.name }} tier drop area"></div>
+  </div>
+  {% endfor %}
+</section>
+
+<section class="tier-backlog">
+  <div class="tier-backlog__title">Backlog</div>
+  <div id="tier-backlog-items" class="tier-backlog__items" aria-label="Backlog unranked items">
+    {% for item in items %}
+    <article class="tier-card" data-tier="{{ item.tier }}" tabindex="0" aria-label="{{ item.name }} card">
+      <img src="{{ item.image | relative_url }}" alt="{{ item.alt | default: item.name }}" class="tier-card__image" />
+      <h3 class="tier-card__title">{{ item.name }}</h3>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="tier-controls" id="controls-panel">
+  <div class="tier-controls__row">
+
+    <button class="tier-button"
+            id="tier-prev-button"
+            aria-label="Undo last action">
+      ◀ Back
+    </button>
+
+    <button class="tier-button"
+            id="tier-next-button"
+            aria-label="Place next item into its tier">
+      Next ▶
+    </button>
+
+    <button class="tier-button"
+            id="record-mode-toggle"
+            aria-label="Activate recording mode and hide page chrome">
+      Record Mode
+    </button>
+
+  </div>
+</section>
+
+{% else %}
+
+<!-- =============================== -->
+<!--         PUBLIC MODE             -->
+<!-- =============================== -->
+
+<section class="tier-list tier-list--content">
+  <div class="tier-list__inner">
+
+    <div class="tier-header" aria-hidden="true">
+      <div>Tier</div>
+      <div>Items</div>
+    </div>
+
+    <div class="tier-rows">
+      {% for tier in page.tier_labels %}
+      {% assign tier_items = items | where:"tier", tier.id %}
+      <div class="tier-row">
+        <div class="tier-label">{{ tier.name }}</div>
+        <div class="tier-items">
+          {% for item in tier_items %}
+          <article class="tier-card" tabindex="0" aria-label="{{ item.name }} card">
+            <img
+              src="{{ item.image | relative_url }}"
+              alt="{{ item.alt | default:item.name }}"
+              class="tier-card__image"
+            />
+            <h3 class="tier-card__title">{{ item.name }}</h3>
+          </article>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+
+{% endif %}
+
+<div class="tier-content">
+  {{ content }}
+</div>
+
+</main>
+
+<p id="tier-status" class="visually-hidden" aria-live="polite"></p>
+
+<!-- =============================================== -->
+<!--      EXTERNAL JS (only in presentation mode)     -->
+<!-- =============================================== -->
+{% if page.presentation_mode %}
+  <script src="/js/tierlist.js"></script>
+{% endif %}
+
+  </div>
+</section>
