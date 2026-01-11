@@ -31,11 +31,6 @@ Focus less on following a fixed format like ‘today and yesterday’ and more o
 
 These are five rules I teach teams when thinking about planning conversations. They apply whether you’re starting the day, responding to new information, or dealing with an incident.
 
-## Flexible, not rigid rules 
-You and your team should set out the conditions for what good looks like to them. Keep in mind the agile manifesto when you do this ‘people and interactions over tools and processes’. Focus less on following the rules of a format like ‘today and yesterday’ and instead focus on the behaviours that make your team be its most collaborative. 
-
-These are 5 rules I teach to teams when thinking about conversations to plan our efforts. Whether this is at the start of the day, when the team learns some new information and needs to respond to change, or even during an incident. 
-
 ### 1. Be short and regular
 
 The kinds of conversations you have in stand ups shouldn’t be limited to a scheduled 15-minute slot. They should happen whenever they’re needed.
