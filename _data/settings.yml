@@ -1,0 +1,158 @@
+basic_settings:
+  site_title: Rich Blake
+  site_tagline: A place to reflect on how I'm learning to live with arthritis, my experience leading high performing teams and everything else in between.
+  favicon_image: /images/favicon.png
+
+header_settings:
+  avatar_image: /images/avatar.jpg
+  logo_image: 
+  logo_width: 200
+
+menu_settings:
+  menu_items:
+    - title: 'Blog'
+      url: '/'
+    - title: 'Now'
+      url: '/now'
+    - title: 'Contact'
+      url: '/contact'
+
+
+grid_settings:
+  grid_spacing: 10
+
+contact_settings:
+  form_action: 'https://formspree.io/f/xqarbagz'
+  confirmation_url: '/thanks'
+  email_subject: 'Rich Blake Blog contact form submission'
+  send_button_text: 'Send Rich a message'
+
+social_settings:
+  linkedin_url: 'https://www.linkedin.com/in/richardblake86/'
+  bluesky_url: 'https://bsky.app/profile/richblake.bsky.social'
+
+color_settings:
+  background_color: '#ffffff'
+  background_alt_color: '#f4f5f6'
+  text_dark_color: '#2A2F36'
+  text_medium_color: '#6C7A89'
+  text_light_color: '#ABB7B7'
+  accent_color: '#ee983d'
+  border_color: '#f7d7b6'
+  overlay_background_color: '#161B21'
+  overlay_text_color: '#ffffff'
+  error_color: '#D64541'
+
+font_settings:
+  font_embed: '<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,800" rel="stylesheet">'
+  title_font: '"Nunito", sans-serif'
+  body_font: '"Nunito", sans-serif'
+  regular_weight: 400
+  bold_weight: 800
+
+  site_title:
+    small_size: 27
+    medium_size: 32
+    large_size: 40
+    weight: 600
+    letter_spacing: 0
+
+  site_tagline:
+    small_size: 16
+    medium_size: 18
+    large_size: 20
+    weight: 400
+    letter_spacing: 0
+    line_height: 1.5
+
+  menu:
+    small_size: 16
+    medium_size: 18
+    large_size: 20
+    weight: 600
+    letter_spacing: 0
+
+  # Headings
+  h1:
+    small_size: 28
+    medium_size: 40
+    large_size: 54
+    weight: 600
+    letter_spacing: -0.02
+    line_height: 1.15
+
+  h2:
+    small_size: 22
+    medium_size: 30
+    large_size: 38
+    weight: 600
+    letter_spacing: -0.01
+    line_height: 1.2
+
+  h3:
+    small_size: 19
+    medium_size: 24
+    large_size: 28
+    weight: 600
+    letter_spacing: -0.01
+    line_height: 1.25
+
+  h4:
+    small_size: 17
+    medium_size: 20
+    large_size: 22
+    weight: 600
+    letter_spacing: 0
+    line_height: 1.35
+
+  h5:
+    small_size: 16
+    medium_size: 18
+    large_size: 20
+    weight: 600
+    letter_spacing: 0
+    line_height: 1.4
+
+  h6:
+    small_size: 16
+    medium_size: 17
+    large_size: 18
+    weight: 600
+    letter_spacing: 0
+    line_height: 1.4
+
+  p:
+    small_size: 17
+    medium_size: 19
+    large_size: 22
+    weight: 400
+    letter_spacing: 0
+    line_height: 1.6
+
+  blockquote:
+    small_size: 22
+    medium_size: 28
+    large_size: 34
+    weight: 300
+    letter_spacing: -0.01
+    line_height: 1.6
+
+  buttons:
+    weight: 600
+    letter_spacing: 0
+
+
+advanced_settings:
+  ajax_loading: false
+  analytics_code: |
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-3NC0YPL15Y');
+    </script>
+  custom_styles: ""
+  header_js: ""
+  footer_js: ""

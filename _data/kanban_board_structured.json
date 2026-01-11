@@ -1,0 +1,276 @@
+﻿{
+    "Reviewing":  [
+                      {
+                          "id":  "KAN-9",
+                          "summary":  "A public backlog of ideas",
+                          "description":  "I want to demonstrate how easy it is to automate making a public backlog. As a side benefit I might learn what content people might be most interested in - and it * should * be motivating for me to see a nice list of ideas in the ‘published’ column. ",
+                          "column":  "Reviewing",
+                          "label":  "everything-else",
+                          "blog url":  null
+                      }
+                  ],
+    "Ideas in the long grass":  [
+                                    {
+                                        "id":  "KAN-12",
+                                        "summary":  "Throw out your Kanban board: other ways to plan work and radiate intent for rapid collaboration",
+                                        "description":  "Some structures (like Kanban and Scrum) used incorrectly can lead to a trained ‘helplessness’. Some creative destruction is sometimes necessary to radically change the status-quo. Here’s some options. ",
+                                        "column":  "Ideas in the long grass",
+                                        "label":  "teams",
+                                        "blog url":  null
+                                    },
+                                    {
+                                        "id":  "KAN-13",
+                                        "summary":  "My approach to Dev Ex",
+                                        "description":  "Dev Ex is too narrow minded for multi-disciplinary teams. Here’s some thinking on how I focus on changing the ‘experience of work’ for everyone for the better. ",
+                                        "column":  "Ideas in the long grass",
+                                        "label":  "teams",
+                                        "blog url":  null
+                                    },
+                                    {
+                                        "id":  "KAN-14",
+                                        "summary":  "What is delivery management?",
+                                        "description":  "I keep coming to community sessions where people ask, what is a delivery manager. Despite other great writing on the subject, I think it’s still a valid question to have a take on. ",
+                                        "column":  "Ideas in the long grass",
+                                        "label":  "teams",
+                                        "blog url":  null
+                                    },
+                                    {
+                                        "id":  "KAN-19",
+                                        "summary":  "A book review - Slow Gods by Claire North",
+                                        "description":  "Sharing my excitement for this excellent book with others. ",
+                                        "column":  "Ideas in the long grass",
+                                        "label":  "everything-else",
+                                        "blog url":  null
+                                    },
+                                    {
+                                        "id":  "KAN-15",
+                                        "summary":  "Using Maslow\u0027s hierarchy of needs as a Dev Ex planning tool",
+                                        "description":  "A case study about using Maslow’s hierarchy as a frame for prioritising and decision making when a team is struggling to keep the day-to-day going. ",
+                                        "column":  "Ideas in the long grass",
+                                        "label":  "teams",
+                                        "blog url":  null
+                                    },
+                                    {
+                                        "id":  "KAN-16",
+                                        "summary":  "Dealing with the tortoise and the hare",
+                                        "description":  "People who want to move fast often find their nemesis in the work place. Those who go slow - but are always right. How to handle the inevitable conflict. ",
+                                        "column":  "Ideas in the long grass",
+                                        "label":  "teams",
+                                        "blog url":  null
+                                    },
+                                    {
+                                        "id":  "KAN-17",
+                                        "summary":  "How I plan to affect change in teams over the long term",
+                                        "description":  "Real world examples of how I consider and formulate objectives to think about creating long term change for teams. ",
+                                        "column":  "Ideas in the long grass",
+                                        "label":  "teams",
+                                        "blog url":  null
+                                    },
+                                    {
+                                        "id":  "KAN-18",
+                                        "summary":  "My approach to servant leadership",
+                                        "description":  "Sharing my delivery philosophy with you - and checking I live up to it. ",
+                                        "column":  "Ideas in the long grass",
+                                        "label":  "teams",
+                                        "blog url":  null
+                                    },
+                                    {
+                                        "id":  "KAN-22",
+                                        "summary":  "The white noise of pain",
+                                        "description":  "Reflections of some recent experiences of chronic pain, and how it’s affected my life. ",
+                                        "column":  "Ideas in the long grass",
+                                        "label":  "arthritis",
+                                        "blog url":  null
+                                    },
+                                    {
+                                        "id":  "KAN-23",
+                                        "summary":  "A newfound awareness of the ground under your feet",
+                                        "description":  "The world is bumpy and I\u0027m much more aware of it. Here are some things I’ve taken for granted until  my mobility got worse. ",
+                                        "column":  "Ideas in the long grass",
+                                        "label":  "arthritis",
+                                        "blog url":  null
+                                    },
+                                    {
+                                        "id":  "KAN-24",
+                                        "summary":  "On the importance of bases and public benches",
+                                        "description":  "Learning to plan journeys, and stay active when mobility isn’t great. ",
+                                        "column":  "Ideas in the long grass",
+                                        "label":  "arthritis",
+                                        "blog url":  null
+                                    },
+                                    {
+                                        "id":  "KAN-25",
+                                        "summary":  "Focus: Beware! Distractions everywhere",
+                                        "description":  "Close your eyes and think of Slack, Teams, Hangouts. You can hear it. Buzz buzz, beep beep - give me your attention now please. On the importance of being really disciplined in your team about the power you have to create distractions. ",
+                                        "column":  "Ideas in the long grass",
+                                        "label":  "teams",
+                                        "blog url":  null
+                                    },
+                                    {
+                                        "id":  "KAN-26",
+                                        "summary":  "Accessible, inclusive facilitation",
+                                        "description":  "Some tips for making sessions that you run accessible and inclusive for everyone. ",
+                                        "column":  "Ideas in the long grass",
+                                        "label":  "teams",
+                                        "blog url":  null
+                                    },
+                                    {
+                                        "id":  "KAN-27",
+                                        "summary":  "A case study: accessing health services with panic attacks",
+                                        "description":  "In my team we use some accessibility persona’s. They’re useful, and build empathy about users with access needs that you might not experience. Here’s a case study of an experience of trying to access some health services while suffering from severe panic attacks. ",
+                                        "column":  "Ideas in the long grass",
+                                        "label":  "arthritis",
+                                        "blog url":  null
+                                    },
+                                    {
+                                        "id":  "KAN-28",
+                                        "summary":  "Things doctor(s) have said to me that make me think ???!!!",
+                                        "description":  "Throw away comments that made me go !? in the moment, but I can chuckle about in hindsight. ",
+                                        "column":  "Ideas in the long grass",
+                                        "label":  "arthritis",
+                                        "blog url":  null
+                                    },
+                                    {
+                                        "id":  "KAN-29",
+                                        "summary":  "Being deliberate about preparing for things to go wrong",
+                                        "description":  "My approach to adult learning strategies to help teams be ready to use the best incident management practices when they need them. ",
+                                        "column":  "Ideas in the long grass",
+                                        "label":  "teams",
+                                        "blog url":  null
+                                    },
+                                    {
+                                        "id":  "KAN-30",
+                                        "summary":  "Why running your own support desk makes your team more user centred",
+                                        "description":  "A love letter/ business case for running your own service desk. Yes. You, AND your expensive developers. ",
+                                        "column":  "Ideas in the long grass",
+                                        "label":  "teams",
+                                        "blog url":  null
+                                    },
+                                    {
+                                        "id":  "KAN-32",
+                                        "summary":  "Getting the basics right: retrospectives",
+                                        "description":  "A simple how-to runbook on retrospectives",
+                                        "column":  "Ideas in the long grass",
+                                        "label":  "teams",
+                                        "blog url":  null
+                                    },
+                                    {
+                                        "id":  "KAN-33",
+                                        "summary":  "Getting the basics right: stand up",
+                                        "description":  "A simple how-to runbook on stand ups",
+                                        "column":  "Ideas in the long grass",
+                                        "label":  "teams",
+                                        "blog url":  null
+                                    },
+                                    {
+                                        "id":  "KAN-34",
+                                        "summary":  "Getting the basics right: planning",
+                                        "description":  "A simple how-to runbook on planning software development",
+                                        "column":  "Ideas in the long grass",
+                                        "label":  "teams",
+                                        "blog url":  null
+                                    },
+                                    {
+                                        "id":  "KAN-35",
+                                        "summary":  "Getting the basics right: show and tell",
+                                        "description":  "A simple how-to runbook on show and tells",
+                                        "column":  "Ideas in the long grass",
+                                        "label":  "teams",
+                                        "blog url":  null
+                                    },
+                                    {
+                                        "id":  "KAN-36",
+                                        "summary":  "Why I don\u0027t run retrospectives.",
+                                        "description":  "An explanation about why I don’t run retrospectives in my teams, and how else we sort out what sucks. ",
+                                        "column":  "Ideas in the long grass",
+                                        "label":  "teams",
+                                        "blog url":  null
+                                    },
+                                    {
+                                        "id":  "KAN-37",
+                                        "summary":  "Why people still focus on tools and processes over people and interactions",
+                                        "description":  "The agile manifesto cries in a corner while you over-focus on Jira. ",
+                                        "column":  "Ideas in the long grass",
+                                        "label":  "teams",
+                                        "blog url":  null
+                                    }
+                                ],
+    "Ready to write":  [
+                           {
+                               "id":  "KAN-20",
+                               "summary":  "A product review - custom walking stick",
+                               "description":  "I had a custom walking stick made by a traditional crafts-person. Spoiler: It’s wonderful. ",
+                               "column":  "Ready to write",
+                               "label":  "arthritis",
+                               "blog url":  null
+                           },
+                           {
+                               "id":  "KAN-21",
+                               "summary":  "A product review - sock-put-er-on-er-er",
+                               "description":  "The ups and downs of putting your socks on. ",
+                               "column":  "Ready to write",
+                               "label":  "arthritis",
+                               "blog url":  null
+                           }
+                       ],
+    "Done":  [
+                 {
+                     "id":  "KAN-8",
+                     "summary":  "Now page",
+                     "description":  "When a lot is changing in my life very rapidly, I want to keep an up-to-date(ish) snap shot about how things are going. ",
+                     "column":  "Done",
+                     "label":  "everything-else",
+                     "blog url":  "/now.html"
+                 }
+             ],
+    "Writing":  [
+                    {
+                        "id":  "KAN-31",
+                        "summary":  "Learning to get out and about with arthritis",
+                        "description":  "Some reflections about getting about (particularly up and down stairs) when you have very limited mobility and the importance of trying to stay active. ",
+                        "column":  "Writing",
+                        "label":  "arthritis",
+                        "blog url":  null
+                    },
+                    {
+                        "id":  "KAN-11",
+                        "summary":  "How to automate your public backlog",
+                        "description":  "A guide how to automatically publish what’s on your backlog or roadmap on your website when you use tools like Jira or Trello. ",
+                        "column":  "Writing",
+                        "label":  "teams",
+                        "blog url":  null
+                    },
+                    {
+                        "id":  "KAN-10",
+                        "summary":  "Weeknote - week 49 - Dec 2025",
+                        "description":  "A lot’s changed in my life recently, and I want to explore new ways of processing what’s going on. ",
+                        "column":  "Writing",
+                        "label":  "everything-else",
+                        "blog url":  null
+                    },
+                    {
+                        "id":  "KAN-38",
+                        "summary":  "Re-writing a 5 minute exercise I use to deal with worry (from 2020)",
+                        "description":  "Re-claiming some content i made in 2020, when I last tried to create a blog. ",
+                        "column":  "Writing",
+                        "label":  "everything-else",
+                        "blog url":  null
+                    },
+                    {
+                        "id":  "KAN-39",
+                        "summary":  "Re-writing an article from 2020: Stand ups are precious",
+                        "description":  "Re-claiming some content i made in 2020, when I last tried to create a blog. ",
+                        "column":  "Writing",
+                        "label":  "teams",
+                        "blog url":  null
+                    },
+                    {
+                        "id":  "KAN-40",
+                        "summary":  "re-writing an article from 2020: What? So what? Now what? Retrospective facilitation guide",
+                        "description":  "Re-claiming some content i made in 2020, when I last tried to create a blog. ",
+                        "column":  "Writing",
+                        "label":  "teams",
+                        "blog url":  null
+                    }
+                ]
+}

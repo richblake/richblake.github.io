@@ -1,0 +1,44 @@
+@media print {
+
+  /* Hide site chrome */
+  header,
+  nav,
+  footer,
+  .site-header,
+  .site-footer,
+  .navigation,
+  .menu,
+  .sidebar {
+    display: none !important;
+  }
+
+  /* White background */
+  body {
+    background: #ffffff !important;
+  }
+
+  /* Black text */
+  body, body * {
+    color: #000 !important;
+    background: transparent !important;
+  }
+
+  /* Improve readability */
+  p, li {
+    line-height: 1.4 !important;
+    margin-bottom: 0.7rem !important;
+  }
+
+  /* No orphan headings, no forced page breaks */
+  h2 {
+    page-break-after: avoid !important;
+    break-inside: avoid !important;
+    margin-top: 2rem !important;
+  }
+
+  /* Full width layout */
+  body {
+    width: 100% !important;
+    max-width: none !important;
+  }
+}

@@ -1,0 +1,287 @@
+/* =========================================================
+   Tier layout
+   ========================================================= */
+
+.tier-page {
+  width: 100%;
+  position: relative;
+}
+
+.tier-page h1 {
+  margin-bottom: 1rem;
+}
+
+.tier-page__description {
+  margin-bottom: 1.5rem;
+}
+
+
+/* =========================================================
+   Tier list outer container (layout only)
+   ========================================================= */
+
+.tier-list {
+  display: block;
+  clear: both;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   Tier list inner container (width + visual chrome)
+   ========================================================= */
+
+.tier-list__inner {
+  border-radius: 8px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.single .tier-list__inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .single .tier-list__inner {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .single .tier-list__inner {
+    max-width: 65%;
+  }
+}
+
+
+/* Ensure following content never flows alongside */
+.tier-divider,
+.tier-content {
+  clear: both;
+}
+
+
+/* =========================================================
+   Header row
+   ========================================================= */
+
+.tier-header {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  padding: 0.75rem 0;
+  background: var(--tier-dark-bg);
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  width: 100%;
+}
+
+.tier-header > div {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Header divider between Tier / Items */
+.tier-header > div:first-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+/* =========================================================
+   Tier rows
+   ========================================================= */
+
+.tier-rows {
+  border: 1px solid var(--tier-border-color);
+  border-top: none; /* header already visually distinct */
+  border-radius: 0 0 8px 8px;
+  overflow: hidden;
+}
+
+.tier-row {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--tier-border-color);
+  align-items: center;
+  min-height: 150px;
+  background-color: var(--tier-bg);
+}
+
+.tier-rows .tier-row:nth-child(even) {
+  background-color: var(--tier-bg-alt);
+}
+
+.tier-rows .tier-row:first-child {
+  border-top: none;
+}
+
+
+/* =========================================================
+   Tier label cell
+   ========================================================= */
+
+.tier-label {
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--tier-dark-bg);
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  /* Make the divider run the full row height */
+  align-self: stretch;
+
+  /* Centre the text vertically inside the full-height cell */
+  display: flex;
+  align-items: center;
+
+  /* Column divider */
+  border-right: 1px solid var(--tier-border-color);
+}
+
+
+/* =========================================================
+   Item containers
+   ========================================================= */
+
+.tier-items,
+.tier-backlog__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  padding-left: 0.5rem;
+}
+
+
+/* =========================================================
+   Cards + interactions
+   ========================================================= */
+
+.tier-card {
+  width: 130px;
+  text-align: center;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transition: transform 0.2s ease;
+}
+
+.tier-card:hover {
+  transform: translateY(-4px);
+}
+
+.tier-card__image {
+  display: block;
+  margin: 0 auto 0.5rem;
+  max-width: 130px;
+  max-height: 130px;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+  transition: box-shadow 0.2s ease;
+}
+
+.tier-card:hover .tier-card__image {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+.tier-card__title {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--tier-dark-bg);
+  line-height: 1.25;
+  font-weight: 500;
+  min-height: calc(1.25em * 3);
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+
+/* =========================================================
+   Backlog
+   ========================================================= */
+
+.tier-backlog {
+  margin-top: 2.5rem;
+  padding: 1.25rem;
+  border: 1px dashed var(--tier-border-color);
+  border-radius: 8px;
+}
+
+
+/* =========================================================
+   Controls
+   ========================================================= */
+
+.tier-controls {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+
+/* =========================================================
+   Presentation mode
+   ========================================================= */
+
+.tier-page--presentation .tier-page__description,
+.tier-page--presentation .tier-backlog,
+.tier-page--presentation .tier-controls {
+  display: none;
+}
+
+.tier-page--presentation .tier-list__inner {
+  max-width: 100%;
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+}
+
+
+/* =========================================================
+   Content below tier list
+   ========================================================= */
+
+.tier-divider {
+  margin: 2.5rem 0;
+  border: 0;
+  border-top: 1px solid var(--tier-border-color);
+}
+
+.tier-content {
+  margin-top: 2.5rem;
+}
+
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .tier-header,
+  .tier-row {
+    grid-template-columns: 120px 1fr;
+    padding: 0.75rem 0;
+    gap: 0.75rem;
+  }
+
+  .tier-card {
+    width: 110px;
+  }
+
+  .tier-card__image {
+    max-width: 110px;
+    max-height: 110px;
+  }
+}

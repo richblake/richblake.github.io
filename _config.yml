@@ -1,16 +1,57 @@
-name: Rich Blake
-description: A blog about working with agile teams
-meta_description: "Rich Blake - a blog about working with agile teams"
+site: Rich Blake
+
+url: https://richblake.github.io/
+baseurl: 
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /blog/:slug
+  projects:
+    output: true
+    permalink: /project/:slug
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
 
 markdown: kramdown
-highlighter: Rouge
-logo: false
-paginate: 5
-baseurl: /
-domain_name: 'https://richblake.github.io/'
-google_analytics: 'UA-169266513-1'
-gems: [jekyll-paginate]
 
-# Details for the RSS feed generator
-url:            'https://richblake.github.io/'
-author:         'Rich Blake'
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+paginate: 6
+paginate_path: "/blog/page:num/"
+  

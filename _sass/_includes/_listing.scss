@@ -1,0 +1,152 @@
+/* -------------------------------------------------------------
+   Text-Only Blog Listing
+-------------------------------------------------------------- */
+
+/* First post spacing */
+.listing-item:first-of-type {
+  margin-top: 2.5rem;
+}
+
+/* Each blog post item */
+.listing-item {
+  margin-bottom: 0.2rem;
+  padding-bottom: 0rem;
+}
+
+/* Post title */
+.listing-item__title {
+  font-size: 1.6rem;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.listing-item__title a {
+  text-decoration: none;
+  color: var(--text-dark);
+}
+
+.listing-item__title a:hover,
+.listing-item__title a:focus {
+  text-decoration: underline;
+  outline: 3px solid var(--accent-color);
+  outline-offset: 3px;
+}
+
+/* -------------------------------------------------------------
+   Metadata cluster (date + tags)
+-------------------------------------------------------------- */
+
+/* Metadata <p> wrapper */
+.listing-metadata {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Date */
+.listing-item__date {
+  color: var(--text-medium);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Inline tag container */
+.post-tags {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Tag chip styling */
+.post-tag {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  background: var(--background-alt-color);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  color: var(--text-dark);
+  font-size: 0.75rem;
+}
+
+/* Keyboard accessibility for tags */
+.post-tag:focus,
+.post-tag:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+/* -------------------------------------------------------------
+   Excerpt
+-------------------------------------------------------------- */
+
+.listing-item__excerpt {
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+  line-height: 1.55;
+}
+
+/* -------------------------------------------------------------
+   Divider between posts
+-------------------------------------------------------------- */
+
+.listing-divider {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 2rem 0;
+}
+
+/* -------------------------------------------------------------
+   Pagination
+-------------------------------------------------------------- */
+
+.single section.pagination {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  width: 100%;
+  margin: 3rem auto 0;
+  padding: 0 10px; /* mobile breathing room */
+}
+
+/* Match written content width */
+@media (min-width: 1024px) {
+  .single section.pagination {
+    max-width: 75%;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1220px) {
+  .single section.pagination {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .single section.pagination {
+    max-width: 65%;
+  }
+}
+
+/* Correct behaviour in all 3 states */
+.single section.pagination .pagination__prev {
+  margin-right: auto;
+}
+
+.single section.pagination .pagination__next {
+  margin-left: auto;
+}
+
+.single section.pagination .pagination__prev a,
+.single section.pagination .pagination__next a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.single section.pagination {
+  float: none;
+}
