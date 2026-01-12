@@ -2,7 +2,7 @@ name: Build and deploy Jekyll site (with Kanban generator)
 
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
   workflow_dispatch:
 
 permissions:
