@@ -70,7 +70,7 @@ items:
     alt: "Appreciative Interviews"
   - name: "1-2-4-All"
     tier: a
-    image: /images/liberating_structures/01_1-2-4-All.png
+    image: /images/liberating_structures/01_1-2-4-all.png
     alt: "1-2-4-All"
   - name: "Making Space with TRIZ"
     tier: a
@@ -189,7 +189,7 @@ I scored each structure from 1 to 3 against each of these characteristics, then 
 
 One thing I found interesting was the overall distribution of the list. Some structures I expected to sit higher didn’t, and others felt more valuable than I’d realised.
 
-I think this is where the “Lego brick” nature of Liberating Structures really matters. Each structure has a clear purpose. Used on its own, it can take you from one place to another.
+I think this is where the building block nature of Liberating Structures really matters. Each structure has a clear purpose. Used on its own, it can take you from one place to another.
 
 But the work we do in creative and technical environments is rarely linear. If it were as simple as “we are here, now we need to be there”, we probably wouldn’t need facilitation at all. Often there are many steps between those points, and the right move isn’t always obvious at the start.
 
