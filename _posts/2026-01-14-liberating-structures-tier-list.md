@@ -2,7 +2,7 @@
 layout: tier
 title: "Liberating Structures Tier List"
 description: "A reflection on how I think about Liberating Structures"
-date: 2026-01-15
+date: 2026-01-14
 tags: ["facilitation","liberating-structures"]
 excerpt: "A reflection of how I think about liberating structures as a toolkit of facilitation structures."
 published: true
@@ -199,7 +199,7 @@ The real value comes from how you combine structures together into a sequence th
 
 In October 2025, I designed a workshop for a community of practice to reflect on their work over the year.
 
-One option would have been to run a straightforward idea-generation session using 1-2-4-All, or even better, a What, So What, Now What? retrospective. That would have produced a useful output, but the thinking would likely have stayed fairly shallow.
+One option would have been to run a straightforward idea-generation session using 1-2-4-All, or even better, a [What, So What, Now What? retrospective](https://richblake.github.io/blog/what-so-what-now-what-retro). That would have produced a useful output, but the thinking would likely have stayed fairly shallow.
 
 Instead, I designed a sequence made up of:
 
@@ -207,7 +207,7 @@ Instead, I designed a sequence made up of:
 
 It took more effort to run, but the difference in outcome was significant. The group developed a shared understanding of the system they were working in, learned more about each other, and left with clear, intentional commitments about how to move forward. The energy and motivation at the end of the session were noticeably higher.
 
-Writing this example made me realise that it would be useful to capture some of the structure “strings” I use most often, and why I combine them in different situations. I’ve added that idea to my open backlog.
+Writing this example made me realise that it would be useful to capture some of the structure “strings” I use most often, and why I combine them in different situations. I’ve added that idea to my [open backlog](https://richblake.github.io/progress.html).
 
 With that context in mind, here’s how the tiers break down.
 
