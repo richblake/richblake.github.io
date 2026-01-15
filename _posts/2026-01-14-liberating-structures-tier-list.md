@@ -166,13 +166,11 @@ For me, they are the most reliable way to get a group to think deeply together. 
 
 ### Why I made this list
 
-I love Liberating Structures so I created this tier list as a reflection exercise. It’s a snapshot of how I think about these structures right now, based on how they show up in my work, and I expect it to change as my role and context evolve.
+I created this tier list as a reflection exercise for myself. It's just a snapshot of how I think about these structures right now, based on how they show up in my work, and I expect it to change as my role and context evolve.
 
 Doing this surprised me. It made me notice the structures I rely on most, and others that I’ve let gather a bit too much dust. I’ve already made a plan to revisit some of those, because there are plenty of conversations happening right now where they could be useful.
 
 I also hope this list acts as a provocation. If you use Liberating Structures, you will almost certainly see them differently to me. That difference is valuable. I’d love this to prompt discussion and the sharing of experience.
-
-With 33 Liberating Structures, there are more possible ways to order them than any person could realistically explore. No two tier lists are likely to match. Disagreement here isn’t a problem, it's welcomed. 
 
 ## My method
 
@@ -183,7 +181,7 @@ When I reflected on why I value Liberating Structures so highly, it came down to
 * **Reliability** - how often something genuinely useful emerges  
 * **Depth when it lands** - how far the conversation and motivation shift when it works  
 
-I scored each structure from 1 to 3 against each of these characteristics, then looked at the patterns that emerged. The tiers are a summary of those patterns, rather than a precise ranking (which is why I’m not sharing the spreadsheet). 😉
+I scored each structure from 1 to 3 against each of these characteristics, then looked at the patterns that emerged. The tiers are a summary of those patterns, rather than a precise ranking, which is why I’m not sharing the spreadsheet. 😉
 
 ## The list itself
 
