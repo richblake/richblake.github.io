@@ -23,8 +23,11 @@ if ($User -and $Token) {
     }
 }
 
-# 3) Jira API URL
-$Url = "https://rich-blake.atlassian.net/rest/agile/1.0/board/1/issue?maxResults=100"
+# 3) Jira API base URL (pagination params added in loop)
+$BaseUrl = "https://rich-blake.atlassian.net/rest/agile/1.0/board/1/issue"
+
+# Tune this if you want (Jira often allows up to 100)
+$MaxResults = 100
 
 # 4) Output location (relative to repo root)
 $RepoRoot   = Get-Location
@@ -35,12 +38,42 @@ if (-not (Test-Path $OutputDir)) {
     New-Item -ItemType Directory -Path $OutputDir | Out-Null
 }
 
-# 5) Call Jira (with fallback)
+# 5) Call Jira (with fallback) + PAGINATION
 $response = $null
+$allIssues = @()
 
 if ($headers) {
     try {
-        $response = Invoke-RestMethod -Uri $Url -Headers $headers -Method Get -ErrorAction Stop
+        $startAt = 0
+
+        while ($true) {
+            $Url = "${BaseUrl}?startAt=${startAt}&maxResults=${MaxResults}"
+
+            $page = Invoke-RestMethod -Uri $Url -Headers $headers -Method Get -ErrorAction Stop
+
+            if (-not $page -or -not $page.issues) {
+                break
+            }
+
+            $allIssues += $page.issues
+
+            $received = $page.issues.Count
+            $total    = [int]$page.total
+
+            # If we’ve reached or passed the total, we’re done
+            $startAt += $received
+            if ($startAt -ge $total) {
+                break
+            }
+
+            # Defensive: if Jira ever returns 0 issues, stop to avoid infinite loop
+            if ($received -eq 0) {
+                break
+            }
+        }
+
+        # Keep a response-like shape for the existing transform step
+        $response = [PSCustomObject]@{ issues = $allIssues }
     }
     catch {
         Write-Warning "Jira request failed: $($_.Exception.Message)"
@@ -51,7 +84,7 @@ else {
 }
 
 # If Jira failed, fall back to existing file
-if (-not $response -or -not $response.issues) {
+if (-not $response -or -not $response.issues -or $response.issues.Count -eq 0) {
     if (Test-Path $OutputFile) {
         Write-Warning "Using existing kanban_board_structured.json as fallback."
         exit 0
@@ -90,4 +123,4 @@ $kanbanStructured |
     ConvertTo-Json -Depth 10 |
     Out-File $OutputFile -Encoding utf8
 
-Write-Host "✅ Kanban JSON refreshed and saved to $OutputFile"
+Write-Host "✅ Kanban JSON refreshed and saved to $OutputFile (issues: $($response.issues.Count))"
