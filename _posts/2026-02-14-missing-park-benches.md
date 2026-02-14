@@ -62,11 +62,11 @@ My options were:
 
 A month later, and it’s still like this today. I’ve now adjusted my journey to compensate, and finally noticed the sign was better positioned. 
 
-## Planning around “Soon™”
-
 <img src="/images/posts/park_bench_coming_soon_14_feb.webp"
      alt="A poster explaining the bench is being repainted by a local artist. It says: This bench is getting a MAKEOVER! We are busy preparing this bench to be painted by a local artist - although you might be eager to take a peek, please dont remove the covering protecting the bench in the meantime. We are greatful for your cooperatiion - if you have any queries please contact communications@eastherts.gov.uk "
      loading="lazy">
+
+## Planning around “Soon™”
 
 I’m genuinely pleased something nice is being created by a talented local artist. I’ve looked at their other work and it’s beautiful. I’m glad they got the funding and the opportunity to make Hertford a little nicer.
 
