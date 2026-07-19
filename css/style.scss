@@ -4,8 +4,8 @@
 // - - - - - - - - - - Foundations
 
 @import "reset";
-@import "_mixins";
-@import "_plugins";
+@import "mixins";
+@import "plugins";
 
 // - - - - - - - - - - Variables
 
@@ -21,6 +21,7 @@ $text-medium-color: {{ site.data.settings.color_settings.text_medium_color }};
 $text-light-color: {{ site.data.settings.color_settings.text_light_color }};
 
 $accent-color: {{ site.data.settings.color_settings.accent_color }};
+$accent-dark-color: {{ site.data.settings.color_settings.accent_dark_color }};
 
 $error-color: {{ site.data.settings.color_settings.error_color }};
 
@@ -122,61 +123,106 @@ $logo-width: {{ site.data.settings.header_settings.logo_width }}px;
 // Grid item
 $grid-spacing: {{ site.data.settings.grid_settings.grid_spacing }}px;
 
+
+// - - - - - - - - - - CSS custom properties
+// One shared source of truth for colours, usable by plain CSS files
+// (tierlist.css, consent.css) as well as inline markup.
+
+:root {
+	--background-color: #{$background-color};
+	--background-alt-color: #{$background-alt-color};
+	--border-color: #{$border-color};
+	--text-dark: #{$text-dark-color};
+	--text-medium: #{$text-medium-color};
+	--text-light: #{$text-light-color};
+	--accent-color: #{$accent-color};
+	--accent-dark: #{$accent-dark-color};
+	--error-color: #{$error-color};
+}
+
+
 // - - - - - - - - - - Global styles
 
-@import "_basic";
+@import "basic";
 
-@import "_includes/_header";
-@import "_includes/_footer";
+@import "_includes/header";
+@import "_includes/footer";
 
-@import "_includes/_content";
-@import "_includes/_socials";
-@import "_includes/_gallery";
-@import "_includes/_syntax";
-@import "_includes/_contact-form";
-
+@import "_includes/content";
+@import "_includes/socials";
+@import "_includes/gallery";
+@import "_includes/syntax";
+@import "_includes/contact-form";
 
 
 // - - - - - - - - - - Section styles
 
-@import "_includes/_listing";
+@import "_includes/listing";
+@import "_includes/progress";
+@import "_includes/cv";
+
 
 // - - - - - - - - - - Skip link
 
 .skip-link {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  background: #000;
-  color: #fff;
-  padding: 8px 12px;
-  z-index: 1000;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: top 0.2s ease;
+	position: absolute;
+	top: -40px;
+	left: 0;
+	background: #000;
+	color: #fff;
+	padding: 8px 12px;
+	z-index: 1000;
+	text-decoration: none;
+	border-radius: 4px;
+	transition: top 0.2s ease;
 }
 
 .skip-link:focus {
-  top: 0;
+	top: 0;
 }
 
-// - - - - - - - - - - Focus Styles
+
+// - - - - - - - - - - Focus styles
+// One rule for the whole site. The ring uses the darker accent so it
+// passes the 3:1 non-text contrast check against a white background.
 
 :focus {
-  outline: none;
+	outline: none;
 }
 
 :focus-visible {
-  outline: 3px solid #ee983d;   
-  outline-offset: 3px;
-  border-radius: 4px;
+	outline: 3px solid $accent-dark-color;
+	outline-offset: 3px;
+	border-radius: 4px;
 }
 
-a:focus-visible,
-button:focus-visible,
-input:focus-visible,
-textarea:focus-visible,
-select:focus-visible {
-  outline: 3px solid #ee983d;
-  outline-offset: 3px;
+
+// - - - - - - - - - - Screen-reader-only text
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	white-space: nowrap;
+	border: 0;
+}
+
+
+// - - - - - - - - - - Reduced motion
+// Respect the user's "reduce motion" system setting.
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
 }

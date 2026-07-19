@@ -3,14 +3,14 @@
 	<div class="wrap">
 
 		{% if site.data.settings.header_settings.avatar_image %}
-		<a href="{{ site.baseurl }}/" class="header__avatar">
-			<img src="{{ site.data.settings.header_settings.avatar_image | relative_url }}" class="header__avatar__img">
+		<a href="{{ site.baseurl }}/" class="header__avatar" aria-label="{{ site.data.settings.basic_settings.site_title }} – home">
+			<img src="{{ site.data.settings.header_settings.avatar_image | relative_url }}" class="header__avatar__img" alt="" width="400" height="400">
 		</a>
 		{% endif %}
 
 		{% if site.data.settings.header_settings.logo_image %}
-		<a href="{{ site.baseurl }}/" class="header__logo">
-			<img src="{{ site.data.settings.header_settings.logo_image | relative_url }}" class="header__logo__img">
+		<a href="{{ site.baseurl }}/" class="header__logo" aria-label="{{ site.data.settings.basic_settings.site_title }} – home">
+			<img src="{{ site.data.settings.header_settings.logo_image | relative_url }}" class="header__logo__img" alt="">
 		</a>
 		{% else %}
 		<a href="{{ site.baseurl }}/" class="header__title">
@@ -27,12 +27,18 @@
 
 				{% for item in site.data.settings.menu_settings.menu_items %}
 					{% assign link = item.url | trim: '/' %}
-					
+					{% assign is_active = false %}
+					{% if current == link %}
+						{% assign is_active = true %}
+					{% elsif link == '' and current contains 'blog/page' %}
+						{% assign is_active = true %}
+					{% endif %}
+
 					<li class="menu__list__item">
-						<a 
-							href="{{ item.url | relative_url }}" 
-							class="menu__list__item__link {% if current == link %}active-link{% endif %}" 
-							{% if current == link %}aria-current="page"{% endif %}
+						<a
+							href="{{ item.url | relative_url }}"
+							class="menu__list__item__link{% if is_active %} active-link{% endif %}"
+							{% if is_active %}aria-current="page"{% endif %}
 						>
 							{{ item.title }}
 						</a>

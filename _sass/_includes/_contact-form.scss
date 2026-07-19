@@ -93,17 +93,13 @@
 		font-size: $p-large;
 	}
 
+	// The focus ring comes from the global :focus-visible rule.
+	// The border change is an extra hint, using the darker accent
+	// so the change itself is visible (3:1 against the resting border).
 	&:focus {
-		outline: none;
-		border-color: $accent-color;
+		border-color: $accent-dark-color;
 	}
 }
-
-// Placeholder cleanup
-::-webkit-input-placeholder { color: adjust-color($text-light-color, $lightness: 15%); }
-::-moz-placeholder { color: adjust-color($text-light-color, $lightness: 15%); }
-:-ms-input-placeholder { color: adjust-color($text-light-color, $lightness: 15%); }
-:-moz-placeholder { color: adjust-color($text-light-color, $lightness: 15%); }
 
 .contact-form__textarea {
 	min-height: 200px;
@@ -111,7 +107,7 @@
 }
 
 /* -------------------------------------------------
-   PRIVACY NOTE — REQUIRED FIX FOR .single p OVERRIDE
+   Privacy note (overrides the .single p column clamp)
    ------------------------------------------------- */
 
 .single .contact-form__privacy-text {

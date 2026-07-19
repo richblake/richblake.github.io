@@ -132,6 +132,9 @@
   document.addEventListener("keydown", function(e) {
     if (["input","textarea","select"].includes(e.target.tagName?.toLowerCase())) return;
 
+    // Let buttons keep their native Space/Enter behaviour
+    if (e.target.closest && e.target.closest("button")) return;
+
     if (e.code === "Space" || e.key === " ") {
       e.preventDefault();
       placeNext();

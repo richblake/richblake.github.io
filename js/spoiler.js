@@ -1,12 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".spoiler-toggle").forEach(button => {
 
-    button.addEventListener("keydown", (e) => {
-      if (e.key === " " || e.key === "Enter") {
-        e.preventDefault();
-        button.click();
-      }
-    });
+    // Native <button> elements already fire "click" on Enter and Space,
+    // so no extra keydown handling is needed.
 
     button.addEventListener("click", () => {
       const block = button.closest(".spoiler-block");
@@ -28,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         setTimeout(() => {
           content.hidden = true;
-          button.focus(); 
+          button.focus();
         }, 300);
       }
     });

@@ -4,8 +4,6 @@ title: "Weeknote 3: A good week for deep work"
 date: 2026-01-20
 tags: ["deep work","motivation","asynchronous working"]
 excerpt: "A week of deep focus, good films, and small reminders that the right conditions make all the difference."
-featured_image:
-featured_image_alt:
 ---
 
 Hello hello!

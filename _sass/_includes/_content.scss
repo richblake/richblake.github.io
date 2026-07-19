@@ -1,6 +1,6 @@
 // - - - - - - - - - - - - - - - - - -
 
-// Single page/post/project
+// Single page/post
 
 // - - - - - - - - - - - - - - - - - -
 
@@ -27,44 +27,17 @@
 	}
 
 	h1, h2, h3, h4, h5, h6, p, ul, ol {
-		margin-left: auto;
-		margin-right: auto;
-
-		@include mq(tabletp) {
-		}
-
-		@include mq(tabletl) {
-			max-width: 75%;
-		}
-
-		@include mq(laptop) {
-			max-width: 70%;
-		}
-
-		@include mq(desktop) {
-			max-width: 65%;
-		}
+		@include content-column;
 	}
 
 	hr {
 		margin: 20px auto;
+		@include content-column;
 
 		@include mq(tabletp) {
 			margin-top: 40px;
 			margin-bottom: 40px;
 			width: auto;
-		}
-
-		@include mq(tabletl) {
-			max-width: 75%;
-		}
-
-		@include mq(laptop) {
-			max-width: 70%;
-		}
-
-		@include mq(desktop) {
-			max-width: 65%;
 		}
 	}
 
@@ -86,9 +59,18 @@
 		padding: 0;
 	}
 
-	p a {
+	p a,
+	li a {
 		font-weight: $bold-weight;
-		border-bottom: 2px solid $accent-color;
+		// Transparent by default so the layout never shifts when the
+		// underline appears. The accent underline only shows on hover
+		// and on keyboard focus.
+		border-bottom: 2px solid transparent;
+
+		&:hover,
+		&:focus-visible {
+			border-bottom-color: $accent-color;
+		}
 	}
 
 	p .button {
@@ -106,29 +88,22 @@
 	table {
 		margin: 20px auto;
 		width: 100%;
+		@include content-column;
 
 		@include mq(tabletp) {
-			margin: 30px auto;
-		}
-
-		@include mq(tabletl) {
-			max-width: 75%;
+			margin-top: 30px;
+			margin-bottom: 30px;
 		}
 
 		@include mq(laptop) {
-			margin: 40px auto;
-			max-width: 70%;
-		}
-
-		@include mq(desktop) {
-			max-width: 65%;
+			margin-top: 40px;
+			margin-bottom: 40px;
 		}
 	}
 
 	.highlight {
 		display: block;
 		padding: 0;
-		line-height: 1.5;
 		font-size: $p-small*0.85;
 		line-height: $p-lineheight;
 		overflow: auto;
@@ -189,7 +164,7 @@
 				padding: 20px;
 			}
 		}
-		
+
 		tr {
 
 			&:nth-child(2n) {
@@ -239,7 +214,7 @@
 
 				&:before {
 					content: counter(footnotes);
-				    box-sizing: border-box;
+					box-sizing: border-box;
 					display: inline-block;
 					margin-right: 3px;
 					width: 20px;
@@ -253,7 +228,7 @@
 					text-align: center;
 					color: $text-light-color;
 				}
-				
+
 				p {
 					display: inline;
 					max-width: 100%;
@@ -305,68 +280,67 @@
 	}
 }
 
-.spoiler-block {
-  margin: 20px auto;
-  border: 1px solid $border-color;
-  border-radius: 6px;
-  background: $background-alt-color;
-  overflow: hidden;
 
-  @include mq(tabletp) { margin: 30px auto; }
-  @include mq(laptop)  { margin: 40px auto; }
+
+// - - - - - - - - - - - - - - - - - - - - Spoiler block
+
+.spoiler-block {
+	margin: 20px auto;
+	border: 1px solid $border-color;
+	border-radius: 6px;
+	background: $background-alt-color;
+	overflow: hidden;
+
+	@include mq(tabletp) { margin: 30px auto; }
+	@include mq(laptop)  { margin: 40px auto; }
 }
 
 .single .spoiler-block {
-  margin-left: auto;
-  margin-right: auto;
-
-  @include mq(tabletl) { max-width: 75%; }
-  @include mq(laptop)  { max-width: 70%; }
-  @include mq(desktop) { max-width: 65%; }
+	@include content-column;
 }
 
 .spoiler-toggle {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
-  background: transparent;
-  border: none;
-  padding: 14px 10px;
-  cursor: pointer;
-  text-align: left;
-  font-size: 1rem;
-  font-weight: 600;
-  color: $text-dark-color;
+	background: transparent;
+	border: none;
+	padding: 14px 10px;
+	cursor: pointer;
+	text-align: left;
+	font-size: 1rem;
+	font-weight: 600;
+	color: $text-dark-color;
 
-transition: background-color 0.2s ease;
+	transition: background-color 0.2s ease;
 
-  &:hover {
-    background: lighten($background-alt-color, 3%);
-  }
+	&:hover {
+		background: lighten($background-alt-color, 3%);
+	}
 }
 
 .spoiler-title {
-  flex: 1;
-  margin-right: 10px;
+	flex: 1;
+	margin-right: 10px;
 }
 
 .spoiler-arrow {
-  transition: transform 0.25s ease;
-  display: inline-block;
-  font-size: 1.1rem;
+	transition: transform 0.25s ease;
+	display: inline-block;
+	font-size: 1.1rem;
 }
 
 .spoiler-open .spoiler-arrow {
-  transform: rotate(90deg);
+	transform: rotate(90deg);
 }
 
 .spoiler-content {
-  padding: 8px 50px 18px; 
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
+	padding: 8px 50px 18px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease;
 }
 
 .spoiler-content h1,
@@ -375,8 +349,8 @@ transition: background-color 0.2s ease;
 .spoiler-content h4,
 .spoiler-content h5,
 .spoiler-content h6 {
-  margin-top: 0.4em;
-  margin-bottom: 0.6em;
+	margin-top: 0.4em;
+	margin-bottom: 0.6em;
 }
 
 .spoiler-content p,
@@ -388,12 +362,7 @@ transition: background-color 0.2s ease;
 .spoiler-content h4,
 .spoiler-content h5,
 .spoiler-content h6 {
-  max-width: none !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-
-.spoiler-toggle:focus-visible {
-  outline: 3px solid $accent-color;
-  outline-offset: 4px;
+	max-width: none !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
 }

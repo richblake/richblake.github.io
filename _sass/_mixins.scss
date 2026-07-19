@@ -130,3 +130,25 @@ $break-desktop: 1600px;
     box-shadow: $top $left $blur $color;
   }
 }
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Content column
+// The shared reading-column width used by prose, tables, forms, spoilers,
+// pagination and the tier list. Change it here, and it changes everywhere.
+// Usage: @include content-column;
+
+@mixin content-column {
+	margin-left: auto;
+	margin-right: auto;
+
+	@include mq(tabletl) {
+		max-width: 75%;
+	}
+
+	@include mq(laptop) {
+		max-width: 70%;
+	}
+
+	@include mq(desktop) {
+		max-width: 65%;
+	}
+}

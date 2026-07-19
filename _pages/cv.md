@@ -1,11 +1,10 @@
 ---
 layout: page
-title: Rich Blake – Senior Delivery Manager
+title: Rich Blake – Lead Delivery Manager
 class: cv-page
 print_css: true
-cv_meta: true
+description: Rich Blake - Lead Delivery Manager. Servant leader to teams that deliver secure and accessible services at national scale, including some of the most significant platforms in government.
 ---
-<meta name="description" content="Rich Blake – Senior Delivery Manager experienced in agile delivery, user-centred design, payments platforms, Open Banking, PCI DSS and public sector digital services.">
 
 <!-- Schema.org Person Metadata -->
 <script type="application/ld+json">
@@ -13,8 +12,8 @@ cv_meta: true
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Rich Blake",
-  "description": "Experienced agile and servant leader with a strong record leading teams across GOV.UK Pay, Cabinet Office, MHCLG, and public sector digital services.",
-  "jobTitle": "Senior Delivery Manager",
+  "description": "An experienced agile, servant leader. I help teams deliver secure and accessible services at national scale, including some of the most significant platforms in government.",
+  "jobTitle": "Lead Delivery Manager",
   "knowsAbout": [
     "Agile delivery",
     "Servant leadership",
@@ -27,7 +26,6 @@ cv_meta: true
     "Cloud strategy",
     "Procurement",
     "Kanban metrics",
-    "Routing refunds",
     "PCI DSS",
     "Coaching",
     "Stakeholder communication",
@@ -45,170 +43,61 @@ cv_meta: true
 }
 </script>
 
-<!-- Recruiter & ATS keyword helpers -->
-<meta name="cv:primary-role" content="Senior Delivery Manager">
-<meta name="cv:seniority" content="Senior / Lead Level">
-<meta name="cv:experience-domains" content="GOV.UK Pay; Open Banking; Cabinet Office; MHCLG; Digital Marketplace; Public Sector Digital Services">
-<meta name="cv:skills" content="Agile delivery; Servant leadership; User-centered design; Payments; Digital transformation; Team coaching; Cloud strategy; Procurement; Kanban metrics; PCI DSS; Delivery management; Cross-functional leadership">
-<meta name="cv:location" content="United Kingdom">
+I am an experienced agile servant leader currently the Lead Delivery Manager on GOV.UK App. 
 
-<style>
+I help teams deliver secure and accessible services at national scale, including some of the most significant platforms in government:
 
-/* Basic readability */
-.cv-page p,
-.cv-page ul,
-.cv-page li {
-  line-height: 1.6;
-  margin-bottom: 1rem;
-}
+- GOV.UK Pay, handling £47.2m in payments each week
+- Digital Marketplace, supporting £3bn in government digital spend
+- Ethnicity Facts and Figures, delivering award-winning, user-centred data
 
-.cv-page h1,
-.cv-page h2 {
-  text-align: left !important;
-  border-bottom: none !important;
-}
-
-/* Lists */
-.cv-page ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
-}
-
-.cv-page li {
-  margin-bottom: 0.5rem;
-}
-
-/* Logo strip width */
-.cv-page .logo-strip-wrapper {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 1rem 0;
-}
-
-.cv-page .logo-strip {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 1.5rem;
-  align-items: center;
-  justify-items: center;
-  margin: 2rem 0;
-}
-
-@media (max-width: 900px) {
-  .cv-page .logo-strip {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  }
-}
-
-/* Logo images — height-controlled so none push to new lines */
-.cv-page .logo-strip img {
-  max-height: 70px;
-  width: auto;
-  height: auto;
-  opacity: 0.9;
-  transition: opacity 0.2s ease;
-}
-
-.cv-page .logo-strip img:hover {
-  opacity: 1;
-}
-
-/* Balanced spacing around the logo strip */
-.cv-page .logo-strip-wrapper,
-.cv-page .logo-strip-wrapper * {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-/* Spacing ABOVE the logo block */
-.cv-page h1 + p + p + p + p + .logo-strip-wrapper,
-.cv-page p + .logo-strip-wrapper,
-.cv-page hr + .logo-strip-wrapper {
-  margin-top: 1.5rem !important;   /* was 0.5rem */
-}
-
-/* Spacing BELOW the logo block */
-.cv-page .logo-strip-wrapper + h2,
-.cv-page .logo-strip-wrapper + hr,
-.cv-page .logo-strip-wrapper + p,
-.cv-page .logo-strip-wrapper + * {
-  margin-top: 1.5rem !important;   /* was 0.5rem */
-}
-
-.skill-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: .75rem;
-  margin: 1rem 0 2rem;
-}
-
-.skill-grid div {
-  background: {{ site.data.settings.color_settings.background_alt_color }};
-  padding: .6rem;
-  border-radius: 6px;
-  font-size: .9rem;
-  border: 1px solid {{ site.data.settings.color_settings.border_color }};
-}
-
-.cv-page a:focus,
-.cv-page img:focus {
-  outline: 3px solid {{ site.data.settings.color_settings.accent_color }};
-  outline-offset: 3px;
-}
-
-.cv-page a:hover {
-  outline: none !important;
-}
-
-</style>
-
-An experienced agile, servant leader.
-
-I help teams deliver the software that users need.  
-
-I use modern UX, Lean and agile methods to help policy, data and engineering teams do their best work.  
-
-My teams run like clockwork, are creative, fun, and are a safe place to experiment.  
-
-I simplify complex issues and help teams focus on value.
-
-<div class="logo-strip-wrapper">
-  <div class="logo-strip">
-    <img src="/images/logos/gds.png" alt="Government Digital Service">
-    <img src="/images/logos/cabinet-office.png" alt="Cabinet Office">
-    <img src="/images/logos/mhclg.png" alt="MHCLG">
-    <img src="/images/logos/hertfordshire.png" alt="Hertfordshire County Council">
-    <img src="/images/logos/sheffield-futures.png" alt="Sheffield Futures">
-    <img src="/images/logos/salford.png" alt="University of Salford">
-  </div>
-</div>
+People regularly tell me I am collaborative, open, and keep them motivated.
 
 ## Experience
 
-### Senior Delivery Manager  
-**Government Digital Service — Nov 2023 to present**
+<div class="logo-strip-wrapper">
+  <div class="logo-strip">
+    <img src="/images/logos/gds.png" alt="Government Digital Service" width="205" height="120" loading="lazy">
+    <img src="/images/logos/cabinet-office.png" alt="Cabinet Office" width="243" height="120" loading="lazy">
+    <img src="/images/logos/mhclg.png" alt="MHCLG" width="192" height="120" loading="lazy">
+    <img src="/images/logos/hertfordshire.png" alt="Hertfordshire County Council" width="206" height="120" loading="lazy">
+    <img src="/images/logos/sheffield-futures.png" alt="Sheffield Futures" width="417" height="120" loading="lazy">
+    <img src="/images/logos/salford.png" alt="University of Salford" width="120" height="120" loading="lazy">
+  </div>
+</div>
 
-- Led a discovery into Pay by Bank and made the case for bringing Open Banking to [GOV.UK Pay](https://www.payments.service.gov.uk/).  
-- Managed an infrastructure team that replaced their logging pipeline with inclusive planning and strong delivery.  
-- Led a technical team to make refunds **98.6% faster**, while staying compliant with industry and security standards.  
-- Improved team experience metrics: **Happiness +15.4%**, **Achievement +14.8%**, **Collaboration +46.2%**.  
-- Regularly praised for communication, use of data, organisation, motivation, openness and coaching.  
-- Led a level one PCI DSS assessment.
+### Lead Delivery Manager  
+**Government Digital Service — Aug 2026 (current)**
+
+- Lead Delivery Manager for GOV.UK App 
+
+### Senior Delivery Manager  
+**Government Digital Service — Nov 2023 to Aug 2026**
+
+- Led a discovery into Pay by Bank and made the case for bringing Open Banking to [GOV.UK Pay](https://www.payments.service.gov.uk/).
+- Reduced requests for evidence by 76% for PCI DSS assessment.
+- Managed an infrastructure team that replaced their logging pipeline with inclusive planning and strong delivery.
+- Led a technical team to **make refunds 98.6% faster**, while staying compliant with industry and security standards.
+- Improved team experience metrics: **Happiness +15.4%**, **Achievement +14.8%**, **Collaboration +46.2%**.
+- Regularly praised for communication, use of data, organisation, motivation, openness and coaching.
+- Led a level one PCI DSS assessment and a subject matter expert on keeping the platform secure day-to-day.
+- Co-lead the GDS delivery management community of practice, owning an initiative to raise awareness of events and activities, and regularly facilitating community sessions. 
+- Own and report on OKRs for accessibility testing, security and PCI practices and projects to keep teams aligned and delivery on track.
 
 ---
 
 ### Delivery Manager  
 **Government Digital Service — Dec 2019 to Nov 2023**
 
-- Led a user-centred technical team running [GOV.UK Pay](https://www.payments.service.gov.uk/), handling **£27.9m in payments each week**.  
-- Reduced feature cycle time from quarters to months through coaching and evolving ways of working.  
-- Delivered complex engineering work: recurring payments, digital wallets and webhooks.  
-- Helped launch the Open Banking team to rapidly prototype and test the riskiest assumptions.  
-- Created the plan that brought [accessibility regulation changes](https://www.legislation.gov.uk/uksi/2022/1097/contents/made) into UK law and set up a ministerial advisory group.  
-- Used Kanban metrics to brief senior leaders and forecast delivery with confidence.  
-- Coached a team in Rwanda to create a cloud strategy and set up spend controls.  
+- Led a user-centred technical team running [GOV.UK Pay](https://www.payments.service.gov.uk/), handling £47.2m in payments each week.
+- Matrix managed multiple teams (user-centered, engineering and infrastructure) across multiple locations 
+- Worked with other government departments to deliver payments for Clean Air Zones 
+- Reduced feature cycle time from quarters to months through coaching and evolving ways of working.
+- Delivered complex engineering work: recurring payments, digital wallets and webhooks.
+- Helped launch the Open Banking team to rapidly prototype and test the riskiest assumptions.
+- Created the plan that brought [accessibility regulation changes](https://www.legislation.gov.uk/uksi/2022/1097/contents/made) into UK law and set up a ministerial advisory group.
+- Used Kanban metrics to brief senior leaders and forecast delivery with confidence.
+- Coached a team in Rwanda to create a cloud strategy and set up spend controls.
 - Supported Government in Albania and Bosnia & Herzegovina to adopt user-centred approaches that fit their context.
 
 ---
@@ -250,13 +139,13 @@ Here are a few of the world-leading services and platforms I've helped teams del
 
 <div class="gallery" data-columns="3" role="group" aria-label="Screenshots of services delivered">
     <img src="/images/screenshots/govuk-pay-home.png" 
-         alt="GOV.UK Pay homepage showing service information">
+         alt="GOV.UK Pay homepage showing service information" width="1740" height="1229" loading="lazy">
     <img src="/images/screenshots/digital-marketplace.png" 
-         alt="Digital Marketplace homepage for finding and buying digital services">
+         alt="Digital Marketplace homepage for finding and buying digital services" width="1682" height="1048" loading="lazy">
     <img src="/images/screenshots/ethnicity-facts-and-figures.png" 
-         alt="Ethnicity Facts and Figures website presenting UK ethnicity data and insights">
+         alt="Ethnicity Facts and Figures website presenting UK ethnicity data and insights" width="1675" height="1145" loading="lazy">
     <img src="/images/screenshots/govuk-pay-performance.png" 
-         alt="GOV.UK Pay performance dashboard displaying transaction volumes and metrics">
+         alt="GOV.UK Pay performance dashboard displaying transaction volumes and metrics" width="1716" height="1215" loading="lazy">
 </div>
 
 ---
@@ -294,7 +183,7 @@ Here are a few of the world-leading services and platforms I've helped teams del
   <div>Team dynamics</div>
   <div>Programme management</div>
   <div>Jira</div>
-  <div>Dev Ex & SORA</div>
+  <div>Dev Ex (Developer experience) & SORA</div>
 </div>
 
 ---

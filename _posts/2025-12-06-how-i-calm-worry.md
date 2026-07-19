@@ -4,8 +4,6 @@ title: "A 5 minute exercise I use to calm worry."
 date: 2025-12-06
 tags: ["self-care"]
 excerpt: "A technique I like to use before a big presentation, or an interview to get myself into the right mindset."
-featured_image:
-featured_image_alt:
 ---
 
 I worry a lot. Maybe you do too.

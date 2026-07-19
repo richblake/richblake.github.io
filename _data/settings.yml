@@ -1,11 +1,10 @@
 basic_settings:
   site_title: Rich Blake
   site_tagline: A place to reflect on how I'm learning to live with arthritis, my experience leading high performing teams and everything else in between.
-  favicon_image: /images/favicon.png
 
 header_settings:
   avatar_image: /images/avatar.jpg
-  logo_image: 
+  logo_image:
   logo_width: 200
 
 menu_settings:
@@ -35,16 +34,17 @@ color_settings:
   background_color: '#ffffff'
   background_alt_color: '#f4f5f6'
   text_dark_color: '#2A2F36'
-  text_medium_color: '#6C7A89'
-  text_light_color: '#ABB7B7'
-  accent_color: '#ee983d'
+  text_medium_color: '#64717F'   # was #6C7A89 (4.39:1) — now 4.99:1 on white
+  text_light_color: '#6B7777'    # was #ABB7B7 (2.06:1) — now 4.64:1 on white
+  accent_color: '#ee983d'        # decorative only (borders, hr, active underline)
+  accent_dark_color: '#B45309'   # interactive orange: buttons, hover, focus (5.02:1 with white)
   border_color: '#f7d7b6'
   overlay_background_color: '#161B21'
   overlay_text_color: '#ffffff'
   error_color: '#D64541'
 
 font_settings:
-  font_embed: '<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,800" rel="stylesheet">'
+  font_embed: '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">'
   title_font: '"Nunito", sans-serif'
   body_font: '"Nunito", sans-serif'
   regular_weight: 400
@@ -142,10 +142,7 @@ font_settings:
     letter_spacing: 0
 
 advanced_settings:
-  ajax_loading: false
   analytics_id: "G-3NC0YPL15Y"
-  analytics_code: |
-    <!-- Google tag (gtag.js) -->
   custom_styles: ""
   header_js: ""
   footer_js: ""

@@ -50,8 +50,7 @@ One Sunday morning in January I turned the corner, imagining what it might be li
 Its wooden slats were gone. The metal frame was wrapped in orange netting. It looked to me like a murder scene. 
 
 <img src="/images/posts/park_bench_gone_closeup_sun_18_jan.webp"
-     alt="The remains of a bench with no slats, covered in orange safety netting."
-     loading="lazy">
+     alt="The remains of a bench with no slats, covered in orange safety netting." width="938" height="1113" loading="lazy">
 
 At the time it felt like a disaster in the moment to me and I missed the poster attached. Instead, I was running through a mental checklist of my options.
 
@@ -63,8 +62,7 @@ My options were:
 A month later, and it’s still like this today. I’ve now adjusted my journey to compensate, and finally noticed the sign was better positioned. 
 
 <img src="/images/posts/park_bench_coming_soon_14_feb.webp"
-     alt="A poster explaining the bench is being repainted by a local artist. It says: This bench is getting a MAKEOVER! We are busy preparing this bench to be painted by a local artist - although you might be eager to take a peek, please dont remove the covering protecting the bench in the meantime. We are greatful for your cooperatiion - if you have any queries please contact communications@eastherts.gov.uk "
-     loading="lazy">
+     alt="A poster explaining the bench is being repainted by a local artist. It says: This bench is getting a MAKEOVER! We are busy preparing this bench to be painted by a local artist - although you might be eager to take a peek, please dont remove the covering protecting the bench in the meantime. We are greatful for your cooperatiion - if you have any queries please contact communications@eastherts.gov.uk " width="938" height="1245" loading="lazy">
 
 ## Planning around “Soon™”
 
@@ -100,11 +98,9 @@ No sign. No explanation. Just a suspiciously placed small bush and a moss-covere
 
 <div class="gallery" data-columns="2" role="group" aria-label="Missing bench in Hertford Castle">
     <img src="/images/posts/park_bench_hertford_castle_14_feb.webp" 
-         alt="A park bench in Hertford Castle set between two bushes on cobblestone. (This one hasn't been kidnapped)"
-         loading="lazy">
+         alt="A park bench in Hertford Castle set between two bushes on cobblestone. (This one hasn't been kidnapped)" width="1200" height="904" loading="lazy">
     <img src="/images/posts/park_bench_gone_hertford_castle_14_feb.webp" 
-         alt="A gap between bushes where a bench once stood, now just a moss-covered concrete base and a small bush grows out of the old screws, which I joke covers the scene of the crime."
-         loading="lazy">
+         alt="A gap between bushes where a bench once stood, now just a moss-covered concrete base and a small bush grows out of the old screws, which I joke covers the scene of the crime." width="1200" height="904" loading="lazy">
 </div>
 
 I’m fairly sure we’ll never see a replacement here. It’s been months. Perhaps the other two benches nearby (just a few metres away) are considered enough. Maybe it's the budget. Maybe it’s on a list somewhere. But with no communication, who knows. 

@@ -4,8 +4,6 @@ title: "A simple guide to running a What? So What? Now What? retrospective"
 date: 2025-12-06
 tags: ["retrospectives", "facilitation", "liberating-structures"]
 excerpt: "A short, practical guide to running a What? So What? Now What? retrospective with a team."
-featured_image:
-featured_image_alt:
 ---
 
 <a href="https://docs.google.com/document/d/1SFPIpTGOjoRvW0w-dp7JwXcWjYEspjL6sdLAOOJycrg/view" class="button button--large">Get the worksheet template</a>
@@ -60,9 +58,11 @@ Don’t worry about having lots of blank lists. 1-2-4-All is fast-moving, and yo
 
 <div class="gallery" data-columns="2" role="group" aria-label="Screenshots of templates">
     <img src="/images/posts/w3-retro-worksheet.png" 
-         alt="An example worksheet layout showing the What, So What, and Now What lists.">
+         alt="An example worksheet layout showing the What, So What, and Now What lists."
+         width="1111" height="1187" loading="lazy">
     <img src="/images/posts/w3-retro-worksheet-1-2-4-All.png" 
-         alt="An example worksheet layout showing the What, So What, and Now What lists ready for a 1-2-4-All">
+         alt="An example worksheet layout showing the What, So What, and Now What lists ready for a 1-2-4-All"
+         width="1601" height="1011" loading="lazy">
 </div>
 
 ### Step 4: Send out your calendar invite 

@@ -4,8 +4,7 @@ title: "Weeknote 1: Walking Before Thinking"
 date: 2025-12-05
 tags: ["arthritis","leading","accessibility"]
 excerpt: "Thinking about my new role position in the team and lessons from acting first, thinking second."
-featured_image: /images/posts/scene-of-crime.jpg
-featured_image_alt: "A bridge horizontally crossing a duck pond at night time"
+featured_image: /images/posts/scene-of-the-crime.JPG
 ---
 
 Hello Hello! I’m writing a weeknote.
@@ -78,7 +77,9 @@ I returned to the bridge where I fell on the way, this time with my stick. I kno
 
 The scene of the crime: 
 
-![A landscape photo of a duck pond in early evening. The ducks are too cold for the water and sit on the side, a wooden bridge crosses the pond horizontally and a slippery path leads up to it.](/images/posts/scene-of-the-crime.JPG)
+<img src="/images/posts/scene-of-the-crime.JPG"
+     alt="A landscape photo of a duck pond in early evening. The ducks are too cold for the water and sit on the side, a wooden bridge crosses the pond horizontally and a slippery path leads up to it."
+     width="1349" height="759" loading="lazy">
 
 ## Igniting my spark
 
@@ -92,7 +93,7 @@ I’ve also been inspired by working with our designer Sally on making an access
 
 In retrospect it made me think of Emily Webber’s book on building communities of practice — and how the activities of the eco-cycle really match up with her description for setting communities up for success. So a good sign.
 
-I’ve loved building this site. It’s a paid-for theme and I’ve used an LLM for most of the coding (I’m not an engineer!), so I take little credit, but I’m proud of some bits - for example a neat little [open backlog](/progress.html) that calls the JIRA API and puts my plans in the open.
+I’ve loved building this site. It’s a paid-for theme and I’ve used an LLM for most of the coding (I’m not an engineer!), so I take little credit, but I’m proud of some bits - for example a neat little [open backlog](/progress) that calls the JIRA API and puts my plans in the open.
 
 Proud of myself. Dead chuffed.
 

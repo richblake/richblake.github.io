@@ -4,13 +4,17 @@ layout: default
 
 <section class="single{% if page.class %} {{ page.class }}{% endif %}">
 
-    <div class="wrap">
+	<div class="wrap">
 
-        <h1>{{ page.title }}</h1>
-        <p class="subtitle">{{ page.subtitle }}</p>
+		<h1>{{ page.title }}</h1>
+		{% if page.subtitle %}
+		<p class="subtitle">{{ page.subtitle }}</p>
+		{% elsif page.date %}
+		<p class="subtitle">{{ page.date | date_to_long_string }}</p>
+		{% endif %}
 
-        {{ page.content }}
+		{{ content }}
 
-    </div>
+	</div>
 
 </section>

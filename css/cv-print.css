@@ -4,17 +4,20 @@
   header,
   nav,
   footer,
-  .site-header,
-  .site-footer,
-  .navigation,
   .menu,
-  .sidebar {
+  .socials,
+  .skip-link,
+  .footer__cookies,
+  #cookie-banner,
+  .button {
     display: none !important;
   }
 
   /* White background */
   body {
     background: #ffffff !important;
+    width: 100% !important;
+    max-width: none !important;
   }
 
   /* Black text */
@@ -34,11 +37,5 @@
     page-break-after: avoid !important;
     break-inside: avoid !important;
     margin-top: 2rem !important;
-  }
-
-  /* Full width layout */
-  body {
-    width: 100% !important;
-    max-width: none !important;
   }
 }

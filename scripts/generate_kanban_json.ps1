@@ -121,6 +121,6 @@ foreach ($issue in $response.issues) {
 # 7) Write JSON
 $kanbanStructured |
     ConvertTo-Json -Depth 10 |
-    Out-File $OutputFile -Encoding utf8
+    Out-File $OutputFile -Encoding utf8NoBOM
 
 Write-Host "✅ Kanban JSON refreshed and saved to $OutputFile (issues: $($response.issues.Count))"

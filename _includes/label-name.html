@@ -1,0 +1,8 @@
+{%- assign mapped = include.label -%}
+{%- for map in include.map -%}
+	{%- assign parts = map | split: ":" -%}
+	{%- if parts[0] == include.label -%}
+		{%- assign mapped = parts[1] -%}
+	{%- endif -%}
+{%- endfor -%}
+{{- mapped -}}

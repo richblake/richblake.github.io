@@ -4,6 +4,7 @@ title: "Weeknote 4 – What I took from Saipan"
 date: 2026-01-26
 tags: ["team dynamics","leadership"]
 excerpt: "What a football film revealed about team dynamics."
+redirect_from: /blog/weeknote-what-i-took-from-saipan-copy
 ---
 
 Hello hello,

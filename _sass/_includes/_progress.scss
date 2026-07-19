@@ -1,0 +1,26 @@
+// - - - - - - - - - - - - - - - - - -
+
+// Progress page (kanban dashboard)
+
+// - - - - - - - - - - - - - - - - - -
+
+.kanban__stats {
+	margin-bottom: 20px;
+}
+
+#label-stats {
+	margin-top: 10px;
+}
+
+.kanban__desc {
+	margin-bottom: 10px;
+}
+
+.kanban__card-desc {
+	margin-top: 0.2em;
+}
+
+// Sort arrows sit inside the dark table header, which is already white text.
+.sort-arrow {
+	font-size: 0.85em;
+}

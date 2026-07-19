@@ -4,10 +4,6 @@
 
 // - - - - - - - - - - - - - - - - - -
 
-
-
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Socials
-
 .socials {
 	list-style: none;
 	margin: 0;
@@ -40,21 +36,19 @@
 		font-size: 20px;
 	}
 
-	// Icon styling (Font Awesome + custom SVG icons)
-	svg,
-	.socials__icon {
+	// Inline SVG icons inherit the link colour via currentColor
+	svg {
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		width: 55%;
 		height: 55%;
-		@include translate(-50%, -50%); // Proper centering for all icons
+		@include translate(-50%, -50%);
 		fill: currentColor;
-		filter: brightness(0) invert(1); // Match FA's whitescale icons
 	}
 
 	&:hover {
-		background: $accent-color;
+		background: $accent-dark-color;
 		color: $background-color;
 	}
 }

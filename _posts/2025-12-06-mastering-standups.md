@@ -4,8 +4,6 @@ title: "Mastering stand ups"
 date: 2025-12-06
 tags: ["stand-ups", "agile-ceremonies"]
 excerpt: "Stand ups are easy to take for granted. This guide shows what to keep in mind to get the most out of them."
-featured_image:
-featured_image_alt:
 ---
 
 Stand ups are famous for the simple ‘today and yesterday’ format, done in 15 minutes.

@@ -2,23 +2,21 @@
 	{% for url in site.data.settings.social_settings %}
 	{% if url[1] != '' %}
 	<li class="socials__item">
-		<a 
-			href="{{ url[1] }}" 
-			target="_blank" 
-			rel="noopener noreferrer" 
+		<a
+			href="{{ url[1] }}"
+			target="_blank"
+			rel="noopener noreferrer"
 			class="socials__item__link"
-			aria-label="{{ url[0] | remove: '_url' | replace: '-', ' ' | capitalize }}">
+			aria-label="{{ url[0] | remove: '_url' | replace: '-', ' ' | capitalize }} (opens in a new tab)">
 
 			{% if url[0] == "bluesky_url" %}
-				<img 
-					src="/images/logos/bluesky.svg" 
-					alt="Bluesky" 
-					class="socials__icon">
-			{% else %}
-				<i 
-					class="fab fa-{{ url[0] | replace: 'facebook', 'facebook-f' | remove: '_url' }}" 
-					aria-hidden="true">
-				</i>
+			<svg viewBox="0 0 600 530" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" focusable="false">
+				<path d="m135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z"/>
+			</svg>
+			{% elsif url[0] == "linkedin_url" %}
+			<svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" focusable="false">
+				<path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 152.9z"/>
+			</svg>
 			{% endif %}
 
 		</a>

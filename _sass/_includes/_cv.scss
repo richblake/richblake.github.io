@@ -1,0 +1,53 @@
+// - - - - - - - - - - - - - - - - - -
+
+// CV page
+
+// - - - - - - - - - - - - - - - - - -
+
+// Logo strip
+
+.logo-strip-wrapper {
+	max-width: 760px;
+	margin: 1.5rem auto;
+}
+
+.logo-strip {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 1.5rem;
+	align-items: center;
+	justify-items: center;
+
+	img {
+		max-height: 70px;
+		width: auto;
+		height: auto;
+		opacity: 0.9;
+	}
+
+	img:hover {
+		opacity: 1;
+	}
+}
+
+@media (max-width: 900px) {
+	.logo-strip {
+		grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+	}
+}
+
+// Skills grid — each skill uses the shared chip style
+
+.skill-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 0.75rem;
+	margin: 1rem 0 2rem;
+}
+
+.skill-grid > div {
+	@extend %chip;
+	display: block;
+	padding: 0.6rem;
+	font-size: 0.9rem;
+}

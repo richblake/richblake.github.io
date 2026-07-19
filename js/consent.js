@@ -9,15 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
     return !!window.__rbAnalyticsLoaded;
   }
 
-  function decodeHtmlEntities(str) {
-    // Converts "&lt;script&gt;" back to "<script>"
-    const txt = document.createElement("textarea");
-    txt.innerHTML = str;
-    return txt.value;
-  }
-
-  // Preferred: GA4 load via Measurement ID (window.GA_MEASUREMENT_ID)
-  function loadGA4ById() {
+  // GA4 load via Measurement ID (window.GA_MEASUREMENT_ID, set in the layout)
+  function loadAnalytics() {
     if (analyticsAlreadyLoaded()) return;
 
     const measurementId = window.GA_MEASUREMENT_ID;
@@ -40,54 +33,19 @@ document.addEventListener("DOMContentLoaded", function () {
     markAnalyticsLoaded();
   }
 
-  // Fallback: load analytics from GA_SNIPPET (HTML snippet string)
-  function loadAnalyticsFromSnippet() {
-    if (analyticsAlreadyLoaded()) return;
-    if (!window.GA_SNIPPET) return;
-
-    // If snippet was escaped in Liquid (e.g. &lt;script&gt;), decode it first
-    const snippet = decodeHtmlEntities(window.GA_SNIPPET);
-
-    const temp = document.createElement("div");
-    temp.innerHTML = snippet;
-
-    Array.from(temp.querySelectorAll("script")).forEach((node) => {
-      const script = document.createElement("script");
-
-      if (node.src) {
-        script.src = node.src;
-        script.async = node.async || true;
-      }
-
-      if (node.textContent && node.textContent.trim().length > 0) {
-        script.textContent = node.textContent;
-      }
-
-      document.head.appendChild(script);
-    });
-
-    markAnalyticsLoaded();
-  }
-
-  function loadAnalytics() {
-    // Try the robust GA4 measurement ID method first
-    loadGA4ById();
-
-    // If not configured, fallback to snippet-based injection
-    if (!analyticsAlreadyLoaded()) {
-      loadAnalyticsFromSnippet();
-    }
-  }
-
   function createBanner() {
+    // Don't stack banners
+    const existing = document.getElementById("cookie-banner");
+    if (existing) existing.remove();
+
     const banner = document.createElement("div");
     banner.id = "cookie-banner";
+    banner.setAttribute("role", "region");
+    banner.setAttribute("aria-label", "Cookie consent");
     banner.innerHTML = `
-      <div class="cookie-banner__inner">
-        <p>This site uses cookies for analytics. Allow Google Analytics?</p>
-        <button id="cookie-accept" type="button">Accept</button>
-        <button id="cookie-decline" type="button">Decline</button>
-      </div>
+      <p>This site uses cookies for analytics. Allow Google Analytics?</p>
+      <button id="cookie-accept" type="button" class="button">Accept</button>
+      <button id="cookie-decline" type="button" class="button">Decline</button>
     `;
     document.body.appendChild(banner);
 
@@ -102,6 +60,14 @@ document.addEventListener("DOMContentLoaded", function () {
       banner.remove();
     };
   }
+
+  // "Cookie settings" button in the footer re-opens the banner
+  document.addEventListener("click", function (e) {
+    if (e.target.closest && e.target.closest("[data-cookie-settings]")) {
+      localStorage.removeItem(CONSENT_KEY);
+      createBanner();
+    }
+  });
 
   const consent = localStorage.getItem(CONSENT_KEY);
 

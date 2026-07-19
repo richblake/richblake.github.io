@@ -4,8 +4,6 @@ title: "Weeknote 2: Finding space"
 date: 2026-01-11
 tags: ["arthritis","leading","accessibility"]
 excerpt: "A weeknote about moving away from extremes and learning to live in the middle."
-featured_image:
-featured_image_alt:
 ---
 
 Hello Hello! Happy new year. 

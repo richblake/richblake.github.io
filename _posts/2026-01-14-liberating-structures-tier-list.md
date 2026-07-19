@@ -205,7 +205,7 @@ Instead, I designed a sequence made up of:
 
 It took more effort to run, but the difference in outcome was significant. The group developed a shared understanding of the system they were working in, learned more about each other, and left with clear, intentional commitments about how to move forward. The energy and motivation at the end of the session were noticeably higher.
 
-Writing this example made me realise that it would be useful to capture some of the structure “strings” I use most often, and why I combine them in different situations. I’ve added that idea to my [open backlog](https://richblake.github.io/progress.html).
+Writing this example made me realise that it would be useful to capture some of the structure “strings” I use most often, and why I combine them in different situations. I’ve added that idea to my [open backlog](https://richblake.github.io/progress).
 
 With that context in mind, here’s how the tiers break down.
 
